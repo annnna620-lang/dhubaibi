@@ -343,17 +343,78 @@ function nearestName(hex) {
   const rgb = (h) => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16)), a = rgb(hex);
   return [...PALETTE, ...TOP_PALETTE].reduce((b, c) => { const d = Math.hypot(...rgb(c[1]).map((v, i) => v - a[i])); return d < b[0] ? [d, c[0]] : b; }, [1e9, ''])[1];
 }
+// تحليل الصورة على الجهاز (بدون خادم): يفصل القطعة عن الخلفية ويقيس نسبها وشكل سطحها وأرجلها وألوانها
+async function localShape(url) {
+  const im = await new Promise((ok, no) => { const i = new Image(); i.onload = () => ok(i); i.onerror = no; i.src = url; });
+  const N = 160, k = N / Math.max(im.width, im.height), W = Math.max(8, Math.round(im.width * k)), H = Math.max(8, Math.round(im.height * k));
+  const c = document.createElement('canvas'); c.width = W; c.height = H; const g = c.getContext('2d', { willReadFrequently: true });
+  g.drawImage(im, 0, 0, W, H); const px = g.getImageData(0, 0, W, H).data;
+  const at = (x, y) => { const i = (y * W + x) * 4; return [px[i], px[i + 1], px[i + 2]]; };
+  // لون الخلفية = وسيط أطراف الصورة
+  const border = []; for (let x = 0; x < W; x++) border.push(at(x, 0), at(x, H - 1)); for (let y = 0; y < H; y++) border.push(at(0, y), at(W - 1, y));
+  const med = [0, 1, 2].map(ch => border.map(b => b[ch]).sort((a, b) => a - b)[border.length >> 1]);
+  const spread = border.reduce((s, b) => s + Math.hypot(b[0] - med[0], b[1] - med[1], b[2] - med[2]), 0) / border.length;
+  const thr = Math.max(38, spread * 1.6);
+  const fg = new Uint8Array(W * H);
+  for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) { const p = at(x, y); fg[y * W + x] = Math.hypot(p[0] - med[0], p[1] - med[1], p[2] - med[2]) > thr ? 1 : 0; }
+  // أكبر جزء متصل = القطعة
+  const lab = new Int32Array(W * H).fill(-1); let best = { n: 0 }, id = 0;
+  for (let s0 = 0; s0 < W * H; s0++) {
+    if (!fg[s0] || lab[s0] >= 0) continue;
+    const q = [s0]; lab[s0] = id; let n = 0, x0 = W, y0 = H, x1 = 0, y1 = 0;
+    while (q.length) { const v = q.pop(), x = v % W, y = (v / W) | 0; n++; if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y;
+      for (const u of [v - 1, v + 1, v - W, v + W]) if (u >= 0 && u < W * H && fg[u] && lab[u] < 0 && Math.abs((u % W) - x) <= 1) { lab[u] = id; q.push(u); } }
+    // نفضّل الجزء الكبير القريب من وسط الصورة (القطعة) على النصوص والزخارف الجانبية
+    const cx = (x0 + x1) / 2 / W - .5, cy = (y0 + y1) / 2 / H - .5, score = n * (1 - Math.min(.8, Math.hypot(cx, cy) * 1.4));
+    if (n > W * H * .03 && score > (best.score || 0)) best = { n, id, x0, y0, x1, y1, score }; id++;
+  }
+  if (best.n < W * H * .04 || spread > 60) return null; // خلفية مزدحمة — ما نقدر نفصل القطعة بثقة
+  const { x0, y0, x1, y1 } = best, bw = x1 - x0 + 1, bh = y1 - y0 + 1, isP = (x, y) => lab[y * W + x] === best.id;
+  const rows = []; for (let y = y0; y <= y1; y++) { let n = 0; for (let x = x0; x <= x1; x++) n += isP(x, y); rows.push(n / bw); }
+  // السطح العلوي: أول ربع — امتلاؤه يفرق بين الدائري/البيضاوي والمستطيل
+  const topBand = rows.slice(0, Math.max(3, Math.round(bh * .22)));
+  const topFill = topBand.reduce((a, b) => a + b, 0) / topBand.length;
+  // الأرجل: أسفل القطعة متفرق
+  const lowBand = rows.slice(Math.round(bh * .7)); const lowFill = lowBand.reduce((a, b) => a + b, 0) / Math.max(1, lowBand.length);
+  const avgCol = (yA, yB) => { let r = 0, gg = 0, b = 0, n = 0; for (let y = yA; y <= yB; y++) for (let x = x0; x <= x1; x++) if (isP(x, y)) { const p = at(x, y); r += p[0]; gg += p[1]; b += p[2]; n++; } return n ? [r / n, gg / n, b / n] : null; };
+  const hex = (v) => '#' + v.map(x => Math.round(x).toString(16).padStart(2, '0')).join('');
+  const topC = avgCol(y0, y0 + Math.max(1, Math.round(bh * .12))), midC = avgCol(y0 + Math.round(bh * .35), y0 + Math.round(bh * .6)), lowC = avgCol(y0 + Math.round(bh * .8), y1);
+  const hsl = ([r, gg, b]) => { r /= 255; gg /= 255; b /= 255; const mx = Math.max(r, gg, b), mn = Math.min(r, gg, b), l = (mx + mn) / 2, d = mx - mn; let h = 0;
+    if (d) h = mx === r ? ((gg - b) / d) % 6 : mx === gg ? (b - r) / d + 2 : (r - gg) / d + 4; return [(h * 60 + 360) % 360, d ? d / (1 - Math.abs(2 * l - 1)) : 0, l]; };
+  const legKind = (col) => { if (!col) return null; const [h, sat, l] = hsl(col); if (l < .22) return 'black'; if (h > 30 && h < 60 && sat > .35 && l > .35) return 'gold'; if (h > 15 && h < 45 && l < .55) return 'wood'; return null; };
+  return { ratio: bh / bw, round: topFill < .8, legs: lowFill < .35, legKind: legKind(lowC), top: topC && hex(topC), body: midC && hex(midC), topLight: topC && hsl(topC)[2] > .72 && hsl(topC)[1] < .25 };
+}
+
 async function localColors(box, msg) {
   try {
     const cols = await extractColors(CS.ref);
     if (!cols.length) throw 0;
+    const p = pieceOf(), notes = [];
     CS.color = [nearestName(cols[0]) + ' (من الصورة)', cols[0]];
-    CS.ai = '';
-    drawPreview();
-    box.hidden = false;
-    box.innerHTML = `<b>🎨 ألوان القطعة من صورتك:</b>
+    let sh = null; try { sh = await localShape(CS.ref); } catch {}
+    if (sh) {
+      // الشكل
+      if (sh.round && p.shapes.some(x => ['round', 'oval'].includes(x))) { const want = CS.w > CS.d * 1.4 && p.shapes.includes('oval') ? 'oval' : p.shapes.includes('round') ? 'round' : 'oval'; CS.shape = want; notes.push('الشكل: ' + SHAPES[want]); }
+      else if (!sh.round && p.shapes.includes('rect')) { CS.shape = 'rect'; notes.push('الشكل: مستطيل'); }
+      // النسب: الارتفاع حسب نسبة القطعة في الصورة (منظر أمامي تقريبي)
+      const h = Math.round(Math.min(Math.max(CS.w * sh.ratio * .9, 30), 260) / 5) * 5;
+      if (Math.abs(h - CS.h) > 8) { CS.h = h; notes.push(`الارتفاع التقريبي ${h} سم`); }
+      // الأرجل
+      if (hasLegs()) { if (!sh.legs) { CS.legs = ['table', 'tiered'].includes(p.kind) ? 'pedestal' : 'hidden'; notes.push('قاعدة بدون أرجل ظاهرة'); }
+        else if (sh.legKind) { CS.legs = sh.legKind; notes.push('الأرجل: ' + OPT.legs.o[sh.legKind]); } }
+      // السطح
+      if (hasTop() && sh.top) {
+        if (sh.topLight) { CS.top = 'marble'; CS.topColor = [nearestName(sh.top) + ' (من الصورة)', sh.top]; notes.push('سطح فاتح يشبه الرخام'); }
+        else if (sh.body && Math.hypot(...[1, 3, 5].map(i => parseInt(sh.top.slice(i, i + 2), 16) - parseInt(sh.body.slice(i, i + 2), 16))) > 60) { CS.top = 'sintered'; CS.topColor = [nearestName(sh.top) + ' (من الصورة)', sh.top]; notes.push('سطح بلون مختلف عن الجسم'); }
+      }
+      if (sh.body) CS.color = [nearestName(sh.body) + ' (من الصورة)', sh.body];
+    }
+    CS.ai = notes.length ? 'تحليل تقريبي من الصورة: ' + notes.join('، ') : '';
+    drawForm();
+    const b2 = $('czAi'); b2.hidden = false;
+    b2.innerHTML = `${notes.length ? `<b>✨ طبّقنا من صورتك:</b> ${esc(notes.join(' • '))}<br>` : '<b>🎨 ألوان القطعة من صورتك:</b>'}
       <div class="cz-sw" data-name="color" style="margin-top:8px">${cols.map(h => `<button type="button" data-n="${esc(nearestName(h))} (من الصورة)" data-hex="${h}"><i style="background:${h}"></i><span>${esc(nearestName(h))}</span></button>`).join('')}</div>
-      <small>طبّقنا اللون الأساسي تلقائياً — اختر لون آخر من الصورة إذا تبي. ${esc(msg || '')}</small>`;
+      <small>${sh ? 'تحليل تقريبي على جهازك — اختر نوع القطعة من الخطوة 1 قبل الرفع، وعدّل المقاسات بالضبط حسب مساحتك.' : 'خلفية الصورة مزدحمة فما قدرنا نحدد الشكل — صوّر القطعة على خلفية سادة أو حدد الشكل من الخطوة 3.'} ${esc(msg || '')}</small>`;
   } catch { box.innerHTML = `<small>${esc(msg || 'تعذّر قراءة الصورة')}</small>`; }
 }
 
@@ -362,7 +423,7 @@ async function analyze(auto) {
   try {
     const r = await fetch('api/custom/analyze', { method: 'POST', body: JSON.stringify({ image: CS.ref }) });
     const j = await r.json();
-    if (!r.ok) return localColors(box, j.error === 'off' ? 'تحديد نوع القطعة والمقاسات من الصورة يتفعّل من الإدارة — حدد المقاسات من الخطوة 3.' : (j.message || j.error));
+    if (!r.ok) return localColors(box, j.error === 'off' ? 'التحليل الذكي الكامل (نوع القطعة وتفاصيلها الدقيقة) يتفعّل لاحقاً.' : (j.message || j.error));
     const cat = CC[j.category] ? j.category : CS.cat, piece = CC[cat].pieces.find(p => p.k === j.piece) || CC[cat].pieces[0];
     const nearest = (hex, list) => { const rgb = (h) => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16)); try { const a = rgb(hex); return list.reduce((b, c) => { const d = Math.hypot(...rgb(c[1]).map((v, i) => v - a[i])); return d < b[0] ? [d, c] : b; }, [1e9, list[0]])[1]; } catch { return list[0]; } };
     Object.assign(CS, {

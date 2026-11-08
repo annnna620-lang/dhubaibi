@@ -760,3 +760,18 @@ h2{font-size:clamp(30px,4vw,46px);color:var(--ink);letter-spacing:-.3px}
 .cz-ar{margin-top:10px;width:100%;border:0;border-radius:99px;padding:13px;font:inherit;font-weight:800;font-size:15px;cursor:pointer;background:var(--gold-grad);color:#1a1400;display:flex;align-items:center;justify-content:center;gap:8px}
 .cz-ar-note{font-size:13.5px;color:#6b604a;text-align:center;line-height:1.8;margin-top:6px}
 .cz-ar-note:empty{display:none}
+
+/* صور المنتجات كاملة في الواجهة والأقسام: الصورة كاملة فوق خلفية ضبابية من نفس الصورة */
+.tile img.bgfill,.hs-slide img.bgfill{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(18px) brightness(.72) saturate(1.1);transform:scale(1.2);opacity:1}
+.tile img.fit{object-fit:contain;padding:10px 10px 0}
+.tile:hover img.fit{transform:scale(1.03)}
+.hs-slide img.fit{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transform:none}
+.hs-slide.on img.fit{animation:none}
+.tile:hover img.bgfill{transform:scale(1.25)}
+
+.arv-roomin{display:flex;align-items:center;gap:6px;flex:1}
+.arv-roomin input{width:100%;min-width:0;border:1.5px solid #ddd3bd;border-radius:12px;padding:9px 10px;font:inherit;font-size:15px;text-align:center;background:#fff}
+.arv-roomin i{font-style:normal;color:#8a7a55;font-weight:800}
+.arv-fit{font-size:13.5px;color:#6b604a;text-align:center;line-height:1.7}
+.arv-fit:empty{display:none}
+.arv-fit b{color:#141414}

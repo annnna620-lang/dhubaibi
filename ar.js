@@ -19,6 +19,41 @@
       : [[160, 230], [200, 300], [250, 350], [300, 400]].map(([w, l]) => ({ w, l, label: `${w}×${l}` }));
   }
 
+  // ---------- ملف GLB للسجادة بالمقاس الحقيقي والصورة مدموجة ----------
+  function rugGLB(jpg, W, L, round) {
+    const T = 0.012, P = [], N = [], U = [], I = [];
+    const quad = (pts, n, uv) => { const o = P.length / 3; pts.forEach((p, k) => { P.push(...p); N.push(...n); U.push(...uv[k]); }); I.push(o, o + 1, o + 2, o, o + 2, o + 3); };
+    if (!round) {
+      const x0 = -W / 2, x1 = W / 2, z0 = -L / 2, z1 = L / 2;
+      quad([[x0, T, z1], [x1, T, z1], [x1, T, z0], [x0, T, z0]], [0, 1, 0], [[0, 1], [1, 1], [1, 0], [0, 0]]);
+      quad([[x0, 0, z1], [x1, 0, z1], [x1, T, z1], [x0, T, z1]], [0, 0, 1], [[0, 1], [1, 1], [1, .995], [0, .995]]);
+      quad([[x1, 0, z0], [x0, 0, z0], [x0, T, z0], [x1, T, z0]], [0, 0, -1], [[1, 0], [0, 0], [0, .005], [1, .005]]);
+      quad([[x1, 0, z1], [x1, 0, z0], [x1, T, z0], [x1, T, z1]], [1, 0, 0], [[1, 1], [1, 0], [.995, 0], [.995, 1]]);
+      quad([[x0, 0, z0], [x0, 0, z1], [x0, T, z1], [x0, T, z0]], [-1, 0, 0], [[0, 0], [0, 1], [.005, 1], [.005, 0]]);
+    } else {
+      const R = W / 2, seg = 96; P.push(0, T, 0); N.push(0, 1, 0); U.push(.5, .5);
+      for (let k = 0; k <= seg; k++) { const a = k / seg * Math.PI * 2, c = Math.cos(a), s = Math.sin(a); P.push(c * R, T, s * R); N.push(0, 1, 0); U.push(.5 + c * .5, .5 + s * .5); }
+      for (let k = 1; k <= seg; k++) I.push(0, k + 1, k);
+      const o = P.length / 3;
+      for (let k = 0; k <= seg; k++) { const a = k / seg * Math.PI * 2, c = Math.cos(a), s = Math.sin(a), u = .5 + c * .497, v = .5 + s * .497; P.push(c * R, 0, s * R, c * R, T, s * R); N.push(c, 0, s, c, 0, s); U.push(u, v, u, v); }
+      for (let k = 0; k < seg; k++) { const a = o + k * 2; I.push(a, a + 1, a + 3, a, a + 3, a + 2); }
+    }
+    const f32 = (a) => new Uint8Array(new Float32Array(a).buffer), idx = new Uint8Array(new Uint32Array(I).buffer);
+    const parts = [f32(P), f32(N), f32(U), idx, jpg], views = [], chunks = []; let off = 0;
+    parts.forEach((b, i) => { views.push({ buffer: 0, byteOffset: off, byteLength: b.length, ...(i < 3 ? { target: 34962 } : i === 3 ? { target: 34963 } : {}) }); const pad = (4 - b.length % 4) % 4; chunks.push(b); if (pad) chunks.push(new Uint8Array(pad)); off += b.length + pad; });
+    const min = [Infinity, Infinity, Infinity], max = [-Infinity, -Infinity, -Infinity];
+    for (let k = 0; k < P.length; k += 3) for (let a = 0; a < 3; a++) { min[a] = Math.min(min[a], P[k + a]); max[a] = Math.max(max[a], P[k + a]); }
+    const json = { asset: { version: '2.0', generator: 'dhubaibi-rug' }, scene: 0, scenes: [{ nodes: [0] }], nodes: [{ mesh: 0, name: 'rug' }],
+      meshes: [{ primitives: [{ attributes: { POSITION: 0, NORMAL: 1, TEXCOORD_0: 2 }, indices: 3, material: 0 }] }],
+      materials: [{ name: 'rug', pbrMetallicRoughness: { baseColorTexture: { index: 0 }, metallicFactor: 0, roughnessFactor: .95 } }],
+      textures: [{ source: 0, sampler: 0 }], samplers: [{ magFilter: 9729, minFilter: 9987, wrapS: 33071, wrapT: 33071 }], images: [{ bufferView: 4, mimeType: 'image/jpeg' }],
+      accessors: [{ bufferView: 0, componentType: 5126, count: P.length / 3, type: 'VEC3', min, max }, { bufferView: 1, componentType: 5126, count: N.length / 3, type: 'VEC3' },
+        { bufferView: 2, componentType: 5126, count: U.length / 2, type: 'VEC2' }, { bufferView: 3, componentType: 5125, count: I.length, type: 'SCALAR' }],
+      bufferViews: views, buffers: [{ byteLength: off }] };
+    let js = new TextEncoder().encode(JSON.stringify(json)); const jp = (4 - js.length % 4) % 4; if (jp) { const t = new Uint8Array(js.length + jp).fill(32); t.set(js); js = t; }
+    return new Blob([new Uint32Array([0x46546c67, 2, 28 + js.length + off]), new Uint32Array([js.length, 0x4e4f534a]), js, new Uint32Array([off, 0x004e4942]), ...chunks], { type: 'model/gltf-binary' });
+  }
+
   window.hasRugAR = (p) => !!(p && (p.arItems || []).some(x => x.src));
 
   window.openRugAR = async function (p, start = 0, srcOf = (s) => s) {
@@ -32,19 +67,20 @@
       <div class="arv-stage"><div class="arv-load">جاري تجهيز المجسم...</div></div>
       <div class="arv-hint">↻ اسحب بإصبعك عشان تدوّرها وتشوفها من كل جهة</div>
       ${items.length > 1 ? `<div class="arv-row"><span>اللون</span><div class="arv-cols">${items.map((x, i) => `<button class="${i === ci ? 'on' : ''}" data-c="${i}" title="${e(x.name)}"><img src="${e(srcOf(x.src, 320))}" alt=""></button>`).join('')}</div></div>` : ''}
+      <div class="arv-row arv-room"><span>غرفتك</span><div class="arv-roomin"><input inputmode="decimal" placeholder="العرض م" aria-label="عرض الغرفة بالمتر"><i>×</i><input inputmode="decimal" placeholder="الطول م" aria-label="طول الغرفة بالمتر"></div></div>
+      <div class="arv-fit"></div>
       <div class="arv-row"><span>المقاس</span><div class="arv-sizes">${sizes.map((s, i) => `<button class="${i === si ? 'on' : ''}" data-s="${i}">${e(s.label)}</button>`).join('')}</div></div>
       <button class="arv-go" type="button"><span>📱</span> شوفها في بيتك بالكاميرا</button>
       <div class="arv-note"></div>
     </div>`;
     document.body.append(ov); document.body.style.overflow = 'hidden';
-    const close = () => { ov.remove(); document.body.style.overflow = ''; };
+    const glbCacheRef = {};
+    const close = () => { ov.remove(); document.body.style.overflow = ''; Object.values(glbCacheRef).forEach(u => URL.revokeObjectURL(u)); };
     ov.querySelector('.arv-x').onclick = close;
     ov.addEventListener('click', (ev) => { if (ev.target === ov) close(); });
 
     try { await loadMV(); } catch { ov.querySelector('.arv-load').textContent = 'تعذّر تحميل العارض — تأكد من الإنترنت'; return; }
     const mv = document.createElement('model-viewer');
-    const base = document.querySelector('script[src$="ar.js"]')?.src.replace(/ar\.js.*$/, '') || '';
-    Object.assign(mv, { src: base + (round ? 'assets/rug-round.glb' : 'assets/rug-rect.glb') });
     for (const [k, v] of Object.entries({
       'camera-controls': '', 'touch-action': 'pan-y', 'auto-rotate': '', 'auto-rotate-delay': '800', 'rotation-per-second': '18deg',
       'shadow-intensity': '1', 'shadow-softness': '0.9', 'exposure': '1.05', 'environment-image': 'neutral',
@@ -55,23 +91,39 @@
     mv.innerHTML = '<button slot="ar-button" hidden></button>';
     const stage = ov.querySelector('.arv-stage'); stage.append(mv);
 
-    const texCache = {};
-    const applyTex = async () => {
-      if (!mv.model) return;
-      const url = new URL(items[ci].src, location.href).href;
-      const tex = texCache[url] || (texCache[url] = await mv.createTexture(url));
-      mv.model.materials[0].pbrMetallicRoughness.baseColorTexture.setTexture(tex);
+    // كل لون ومقاس = ملف 3D مستقل والصورة مدموجة فيه بالمقاس الحقيقي بالمتر — عشان تظهر صح في كاميرا الآيفون والأندرويد
+    const jpgCache = {}, glbCache = glbCacheRef;
+    const texBytes = (src) => jpgCache[src] || (jpgCache[src] = (async () => {
+      const img = await new Promise((ok, no) => { const i = new Image(); i.crossOrigin = 'anonymous'; i.onload = () => ok(i); i.onerror = no; i.src = new URL(src, location.href).href; });
+      const k = Math.min(1, 2048 / Math.max(img.naturalWidth, img.naturalHeight)), c = document.createElement('canvas');
+      c.width = Math.round(img.naturalWidth * k); c.height = Math.round(img.naturalHeight * k); c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+      const b = await new Promise(r => c.toBlob(r, 'image/jpeg', .88)); return new Uint8Array(await b.arrayBuffer());
+    })());
+    const show = async () => {
+      const key = ci + ':' + si;
+      try {
+        if (!glbCache[key]) { const s = sizes[si]; glbCache[key] = URL.createObjectURL(rugGLB(await texBytes(items[ci].src), s.w / 100, s.l / 100, round)); }
+        mv.src = glbCache[key];
+      } catch { const l = ov.querySelector('.arv-load'); if (l) l.textContent = 'تعذّر تحميل صورة السجادة'; }
     };
-    const applySize = () => { const s = sizes[si]; mv.scale = `${s.w / 100} 1 ${s.l / 100}`; mv.updateFraming?.(); };
-    mv.addEventListener('load', async () => { applySize(); await applyTex(); stage.querySelector('.arv-load')?.remove(); }, { once: true });
+    mv.addEventListener('load', () => stage.querySelector('.arv-load')?.remove());
+    show();
 
-    ov.querySelector('.arv-cols')?.addEventListener('click', async (ev) => {
+    ov.querySelector('.arv-cols')?.addEventListener('click', (ev) => {
       const b = ev.target.closest('button'); if (!b) return; ci = +b.dataset.c;
-      ov.querySelectorAll('.arv-cols button').forEach(x => x.classList.toggle('on', x === b)); await applyTex();
+      ov.querySelectorAll('.arv-cols button').forEach(x => x.classList.toggle('on', x === b)); show();
     });
-    ov.querySelector('.arv-sizes').addEventListener('click', (ev) => {
-      const b = ev.target.closest('button'); if (!b) return; si = +b.dataset.s;
-      ov.querySelectorAll('.arv-sizes button').forEach(x => x.classList.toggle('on', x === b)); applySize();
+    const pickSize = (i) => { si = i; ov.querySelectorAll('.arv-sizes button').forEach((x, k) => x.classList.toggle('on', k === i)); show(); };
+    ov.querySelector('.arv-sizes').addEventListener('click', (ev) => { const b = ev.target.closest('button'); if (b) pickSize(+b.dataset.s); });
+    // مقاس الغرفة ← أنسب مقاس سجادة (يترك أرضية مكشوفة حول السجادة)
+    const room = ov.querySelector('.arv-room'), fit = ov.querySelector('.arv-fit');
+    room?.addEventListener('input', () => {
+      const [a, b] = [...room.querySelectorAll('input')].map(i => parseFloat(String(i.value).replace(',', '.')) || 0).sort((x, y) => x - y);
+      if (!a || !b) { fit.textContent = ''; return; }
+      const W = a * 100, L = b * 100, margin = Math.min(W, L) < 300 ? 60 : 100;
+      let best = -1; sizes.forEach((s, i) => { if (s.w <= W - margin && s.l <= L - margin) best = i; });
+      if (best < 0) { fit.textContent = 'الغرفة صغيرة على المقاسات المتوفرة — كلمنا ونفصّل لك مقاس خاص'; return; }
+      pickSize(best); fit.innerHTML = `المقاس الأنسب لغرفتك: <b>${e(sizes[best].label)}</b> — اخترناه لك وتقدر تشوفه الحين بالكاميرا`;
     });
 
     const note = ov.querySelector('.arv-note');

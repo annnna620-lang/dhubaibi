@@ -125,7 +125,7 @@ window.GH_BLOBS = {};
       }
       if (ep === 'login') {
         const t = String(body().password || '').trim();
-        if (!/^(github_pat_|ghp_)[A-Za-z0-9_]{20,}$/.test(t)) return fail('الصق مفتاح GitHub كامل — يبدأ بـ github_pat_', 401);
+        if (!/^github_pat_[A-Za-z0-9_]{20,}$/.test(t)) return fail('الصق مفتاح GitHub من نوع Fine-grained — يبدأ بـ github_pat_', 401);
         token = t;
         try { const user = await checkToken(); try { localStorage.setItem(TK, t); } catch {} return json({ ok: true, user }); }
         catch (e) { token = ''; return fail(e.message, 401); }

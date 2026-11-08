@@ -16,6 +16,8 @@ const ICONS = {
 const svg = (n) => `<svg viewBox="0 0 24 24" aria-hidden="true">${ICONS[n] || ''}</svg>`;
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const get = (o, p) => p.split('.').reduce((a, k) => (a == null ? a : a[k]), o);
+// روابط آمنة فقط (يمنع javascript: وغيره)
+const safeUrl = (u) => /^(https?:\/\/|#|uploads\/|assets\/|tel:|mailto:)/i.test(String(u || '').trim()) ? String(u).trim() : '#';
 const digits = (s) => String(s || '').replace(/\D/g, '');
 const intl = (s) => { let d = digits(s); if (d.startsWith('00')) d = d.slice(2); if (d.startsWith('0')) d = '966' + d.slice(1); return d; };
 const $ = (id) => document.getElementById(id);
@@ -152,7 +154,7 @@ function render(d) {
     .filter(x => x.p.images?.[0]?.src).slice(0, 6);
   if (d.company.heroImage && !showcase.length) showcase.push({ p: { name: d.company.nameAr, images: [{ src: d.company.heroImage }] }, cat: null });
   $('hsSlides').innerHTML = showcase.map((x, i) =>
-    `<div class="hs-slide ${i === 0 ? 'on' : ''}"><img src="${esc(sized(x.p.images[0].src, 1280))}" alt="${esc(x.p.name)}" ${i ? 'loading="lazy"' : 'fetchpriority="high"'} decoding="async"></div>`).join('');
+    `<div class="hs-slide ${i === 0 ? 'on' : ''}"><img class="bgfill" src="${esc(sized(x.p.images[0].src, 320))}" alt="" aria-hidden="true" decoding="async"><img class="fit" src="${esc(sized(x.p.images[0].src, 1280))}" alt="${esc(x.p.name)}" ${i ? 'loading="lazy"' : 'fetchpriority="high"'} decoding="async"></div>`).join('');
   $('hsDots').innerHTML = showcase.length > 1 ? showcase.map((_, i) => `<button class="${i === 0 ? 'on' : ''}" aria-label="شريحة ${i + 1}"></button>`).join('') : '';
   $('heroShow').hidden = !showcase.length;
   let hs = 0;
@@ -184,7 +186,7 @@ function render(d) {
   // ---- الأقسام (بنتو) ----
   $('catGrid').innerHTML = cats.map(cat => {
     const n = cat.products?.length, img = cat.cover || cat.products?.[0]?.images?.[0]?.src || cat.images?.[0]?.src;
-    return `<a class="tile" href="#c/${esc(cat.id)}" data-id="${esc(cat.id)}">${img ? imgTag(img, cat.title, '', cats.indexOf(cat) === 0 ? 1280 : 640) : `<div class="ph"><span>${esc(cat.title)}</span></div>`}
+    return `<a class="tile" href="#c/${esc(cat.id)}" data-id="${esc(cat.id)}">${img ? `<img class="bgfill" src="${esc(sized(img, 320))}" alt="" aria-hidden="true" loading="lazy" decoding="async">` + imgTag(img, cat.title, 'fit', cats.indexOf(cat) === 0 ? 1280 : 640) : `<div class="ph"><span>${esc(cat.title)}</span></div>`}
       <div class="tile-body"><div>${n ? `<small>${n} منتج</small>` : ''}<h3>${esc(cat.title)}</h3>${cat.description ? `<p>${esc(cat.description)}</p>` : ''}</div><span class="go">←</span></div></a>`;
   }).join('') || '<p class="empty-note">لا توجد أقسام بعد</p>';
   $('catGrid').onclick = (e) => {
@@ -368,11 +370,11 @@ function openReels(list, start) {
   const track = $('rpTrack');
   const TT = (id) => `https://www.tiktok.com/player/v1/${id}?autoplay=1&loop=1&music_info=0&description=0&rel=0&native_context_menu=0&closed_caption=0`;
   track.innerHTML = list.map(r => `<div class="rp-item ${r.tiktokId ? 'tt' : ''}">
-    ${r.tiktokId ? `<iframe data-src="${TT(esc(r.tiktokId))}" allow="autoplay; fullscreen; encrypted-media; picture-in-picture" allowfullscreen title="${esc(r.title || 'TikTok')}"></iframe>`
+    ${/^\d+$/.test(r.tiktokId || '') ? `<iframe data-src="${TT(esc(r.tiktokId))}" allow="autoplay; fullscreen; encrypted-media; picture-in-picture" allowfullscreen title="${esc(r.title || 'TikTok')}"></iframe>`
       : `<video src="${esc(r.video)}" ${r.poster ? `poster="${esc(r.poster)}"` : ''} loop playsinline preload="metadata"></video>
     <button class="rp-sound" type="button">🔊</button>`}
     ${(r.title || r.caption || r.link) ? `<div class="rp-info">${r.title ? `<b>${esc(r.title)}</b>` : ''}${r.caption ? `<p>${esc(r.caption)}</p>` : ''}
-      ${r.link ? `<a class="btn gold" href="${esc(r.link)}">شاهد المنتج</a>` : ''}${r.tiktokId && r.tiktok && r.tiktokButton !== false ? ` <a class="btn ghost tt-open" href="${esc(r.tiktok)}" target="_blank" rel="noopener">${svg('tiktok')} فتح في تيك توك</a>` : ''}</div>` : (r.tiktokId && r.tiktok && r.tiktokButton !== false ? `<div class="rp-info"><a class="btn ghost tt-open" href="${esc(r.tiktok)}" target="_blank" rel="noopener">${svg('tiktok')} فتح في تيك توك</a></div>` : '')}</div>`).join('');
+      ${r.link ? `<a class="btn gold" href="${esc(safeUrl(r.link))}">شاهد المنتج</a>` : ''}${r.tiktokId && r.tiktok && r.tiktokButton !== false ? ` <a class="btn ghost tt-open" href="${esc(safeUrl(r.tiktok))}" target="_blank" rel="noopener">${svg('tiktok')} فتح في تيك توك</a>` : ''}</div>` : (r.tiktokId && r.tiktok && r.tiktokButton !== false ? `<div class="rp-info"><a class="btn ghost tt-open" href="${esc(safeUrl(r.tiktok))}" target="_blank" rel="noopener">${svg('tiktok')} فتح في تيك توك</a></div>` : '')}</div>`).join('');
   $('rp').hidden = false; document.body.style.overflow = 'hidden';
   const vids = [...track.querySelectorAll('video')];
   vids.forEach(v => { v.muted = rpMuted; v.onclick = () => v.paused ? v.play() : v.pause(); });
@@ -457,7 +459,7 @@ function productCard(c, p, showCat = false) {
 
 function crumbs(items) {
   return `<nav class="crumbs"><a href="#top">الرئيسية</a>${items.map(([t, h]) =>
-    `<span class="sep">‹</span>${h ? `<a href="${h}">${esc(t)}</a>` : `<span>${esc(t)}</span>`}`).join('')}</nav>`;
+    `<span class="sep">‹</span>${h ? `<a href="${esc(h)}">${esc(t)}</a>` : `<span>${esc(t)}</span>`}`).join('')}</nav>`;
 }
 
 function renderCategory(c) {
