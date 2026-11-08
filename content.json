@@ -2876,6 +2876,198 @@
   ],
   "projects": [
     {
+      "id": "69b64639",
+      "title": "تأثيث غرف فندقية متكاملة",
+      "client": "من أعمال قسم المشاريع — فنادق",
+      "description": "تجهيز غرف فندقية كاملة: أسرّة وألواح رأسية مبطّنة وخشبية، كومودينات، مفارش وفرش، ومكاتب استقبال — بتصاميم متناسقة مع هوية كل فندق.",
+      "images": [
+        {
+          "src": "uploads/prj-rooms-12-9b1766.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-rooms-27-fbd542.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-rooms-15-06bd15.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-rooms-19-594000.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-rooms-18-6fc018.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-rooms-20-bed7a0.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-rooms-34-2bd233.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-rooms-24-815a1f.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-rooms-23-4f0b9e.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-rooms-21-02ee3f.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-rooms-22-8bc945.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-rooms-14-4f4042.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-rooms-35-114efb.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-rooms-37-8dbcc9.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-rooms-16-b3fb19.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-lobby-13-6fc28a.webp",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "8c9fc1db",
+      "title": "أطقم غرف ودواليب وتسريحات",
+      "client": "من أعمال قسم المشاريع — فنادق وسكن",
+      "description": "تنفيذ وتركيب دواليب وتسريحات ومكاتب ووحدات تلفزيون بمقاسات كل غرفة، مع أسرّة ومفارش وموكيت متناسق.",
+      "images": [
+        {
+          "src": "uploads/prj-suites-02-91b227.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-suites-09-c3c145.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-suites-11-9aeaaa.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-suites-01-831e30.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-suites-29-7cb9db.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-suites-31-2813f7.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-suites-30-959d21.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-suites-36-6e0faf.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-suites-26-e122df.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-suites-17-b934cc.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-suites-04-429a54.webp",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "99aa41a1",
+      "title": "موكيت الغرف والممرات",
+      "client": "من أعمال قسم المشاريع — فنادق",
+      "description": "توريد وتركيب موكيت فندقي بتصاميم ونقشات حسب الطلب للغرف والممرات، تحمّل عالي للحركة وألوان ثابتة.",
+      "images": [
+        {
+          "src": "uploads/prj-carpet-07-f26cfb.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-carpet-25-0eefef.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-carpet-05-d8e709.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-carpet-33-b291ab.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-carpet-00-debd83.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-carpet-40-7d73bf.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-carpet-06-dc55ce.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-carpet-08-f63115.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-carpet-28-f7187e.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-carpet-41-bbf441.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-carpet-39-6bebb3.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-carpet-32-df05a4.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-carpet-10-4e4c03.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-carpet-03-c7f3c4.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/prj-carpet-38-cc297e.webp",
+          "caption": ""
+        }
+      ]
+    },
+    {
       "id": "852edb8a",
       "title": "تركيب نجف فاخر",
       "client": "من أعمالنا — الهبة الحجر",
@@ -3199,6 +3391,22 @@
       "poster": "uploads/tt-7705467864165256468.webp",
       "link": "",
       "tiktokId": "7705467864165256468"
+    },
+    {
+      "id": "9893c472",
+      "video": "uploads/reel-prj-corridor.mp4",
+      "poster": "uploads/reelp-prj-corridor.webp",
+      "title": "ممرات فندقية من تنفيذنا",
+      "caption": "موكيت وإضاءة ممرات — قسم المشاريع",
+      "link": "#projects"
+    },
+    {
+      "id": "ca7fa12a",
+      "video": "uploads/reel-prj-room.mp4",
+      "poster": "uploads/reelp-prj-room.webp",
+      "title": "غرفة فندقية جاهزة",
+      "caption": "تسريحة ودولاب وموكيت — قسم المشاريع",
+      "link": "#projects"
     }
   ],
   "reviews": [
