@@ -116,6 +116,11 @@ const TABS = [
     ]},
   ]},
   { key: 'projects', icon: '🏗️', title: 'المشاريع', hint: 'أعمال منفّذة مع صورها', panels: [
+    { title: 'تواصل قسم المشاريع', hint: 'يظهر تحت المشاريع زر اتصال وواتساب لقسم المشاريع — اتركه فاضي لإخفائه', fields: [
+      { p: 'projectsDept.phone', label: 'رقم قسم المشاريع (اتصال وواتساب)', t: 'ltr', hint: 'مثال: 0555123456' },
+      { p: 'projectsDept.title', label: 'العنوان', hint: 'مثال: عندك مشروع فندق أو فيلا أو مكتب؟' },
+      { p: 'projectsDept.text', label: 'النص', t: 'textarea' },
+    ]},
     { fields: [
       { p: 'projects', t: 'list', itemName: 'مشروع', titleKey: 'title', thumb: (it) => it.images?.[0]?.src, fields: [
         { k: 'title', label: 'اسم المشروع' },

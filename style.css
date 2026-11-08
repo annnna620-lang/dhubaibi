@@ -695,3 +695,17 @@ h2{font-size:clamp(30px,4vw,46px);color:var(--ink);letter-spacing:-.3px}
 .hc-go{flex:none;font-weight:800;font-size:14px;color:#111;background:#fff;border-radius:99px;padding:7px 14px}
 @media (max-width:640px){.hero-custom{margin:-16px 0 28px}.hc-go{display:none}.hc-t b{font-size:17px}}
 .hours span{align-items:center}.hours span b,.hours span em{white-space:nowrap}.hours span em{direction:rtl;font-size:14.5px}
+
+/* تواصل قسم المشاريع */
+.pdept{margin-top:34px;display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap;padding:26px 28px;border-radius:22px;background:linear-gradient(135deg,#141414,#1f1b14);color:#f5efe2;border:1px solid rgba(201,162,90,.35);box-shadow:0 18px 40px -22px rgba(0,0,0,.45)}
+.pdept[hidden]{display:none}
+.pdept-t{flex:1 1 320px;min-width:0}
+.pdept-t b{display:block;font-size:20px;margin-bottom:6px}
+.pdept-t p{color:#cfc6b4;font-size:15px;line-height:1.8;margin:0 0 8px}
+.pdept-num{color:#d8b46a;font-weight:800;font-size:19px;letter-spacing:.5px;text-decoration:none}
+.pdept-b{display:flex;gap:10px;flex-wrap:wrap}
+.pdept-b .btn{white-space:nowrap;padding:13px 24px;font-size:15px}
+.pdept-b .btn svg{width:19px;height:19px;flex:none}
+.pdept-b .btn.line{background:transparent;color:#f5efe2;border-color:rgba(245,239,226,.45)}
+.pdept-b .btn.line:hover{border-color:var(--gold);color:var(--gold-2)}
+@media (max-width:600px){.pdept{padding:22px 18px}.pdept-b{width:100%;flex-direction:column}.pdept-b .btn{width:100%}}

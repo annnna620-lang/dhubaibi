@@ -224,6 +224,17 @@ function render(d) {
   const projs = (d.projects || []).filter(p => p.images?.length);
   $('projGrid').innerHTML = projs.map(p => cardHTML(p.title, p.client, p.description, p.images[0].src, p.images.length)).join('');
   [...$('projGrid').children].forEach((el, i) => el.onclick = () => openGallery(projs[i].images.map(m => ({ src: m.src, cap: m.caption || projs[i].title }))));
+  // تواصل قسم المشاريع
+  const pd = d.projectsDept || {};
+  $('projDept').hidden = !pd.phone;
+  if (pd.phone) {
+    const waTxt = encodeURIComponent(`السلام عليكم، أبي أستفسر عن مشروع مع ${d.company.nameAr || 'شركة الضبيبي'}`);
+    $('projDept').innerHTML = `<div class="pdept-t"><b>${esc(pd.title || 'عندك مشروع؟ قسم المشاريع جاهز يخدمك')}</b>
+      <p>${esc(pd.text || 'تأثيث وتوريد وتنفيذ للفنادق والفلل والمكاتب والقصور — كلمنا ونرتب لك زيارة وعرض سعر.')}</p>
+      <a class="pdept-num" href="tel:${digits(pd.phone)}" dir="ltr">${esc(pd.phone)}</a></div>
+      <div class="pdept-b"><a class="btn gold" href="https://wa.me/${intl(pd.phone)}?text=${waTxt}" target="_blank" rel="noopener">${svg('whatsapp')} واتساب المشاريع</a>
+      <a class="btn line" href="tel:${digits(pd.phone)}">${svg('phone')} اتصال</a></div>`;
+  }
   const clients = (d.clients || []).filter(x => x.logo || (x.name && x.name !== 'اسم العميل'));
   $('clientGrid').innerHTML = clients.map(x =>
     `<div class="client" title="${esc(x.name)}">${x.logo ? imgTag(x.logo, x.name) : esc(x.name)}</div>`).join('');
