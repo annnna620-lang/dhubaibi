@@ -209,7 +209,7 @@ function render(d) {
   // ---- الريلز ----
   const reels = (d.reels || []).filter(r => r.video || r.tiktokId);
   $('reelRow').innerHTML = reels.map((r, i) => `<div class="reel" data-i="${i}">
-    ${r.poster ? imgTag(r.poster, '', '', 480) : `<div class="ph" style="position:absolute;inset:0"><span>${r.tiktokId ? svg('tiktok') : ''}</span></div>`}
+    ${r.poster ? imgTag(r.poster, '', '', 480) : `<div class="ph" style="position:absolute;inset:0"><span>${r.tiktokId ? svg('tiktok') : ''}</span></div>${/^\d+$/.test(r.tiktokId || '') ? `<img src="${sized('uploads/tt-' + r.tiktokId + '.webp', 480)}" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" onerror="this.remove()">` : ''}`}
     ${r.video && !r.tiktokId ? `<video muted loop playsinline preload="none" data-src="${esc(r.video)}"></video>` : ''}
     ${r.tiktokId ? `<span class="tt-badge">${svg('tiktok')}</span>` : ''}<span class="play">▶</span>${r.title ? `<span class="rt">${esc(r.title)}</span>` : ''}</div>`).join('');
   [...$('reelRow').children].forEach(el => {

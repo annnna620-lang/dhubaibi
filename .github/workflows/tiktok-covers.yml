@@ -1,0 +1,29 @@
+name: أغلفة تيك توك
+on:
+  push:
+    branches: [main]
+    paths: [content.json]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: tiktok-covers
+  cancel-in-progress: false
+jobs:
+  covers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-save --no-package-lock sharp@0.35.5
+      - run: node .github/tiktok-covers.js
+      - name: حفظ الأغلفة
+        run: |
+          git config user.name "dhubaibi-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add uploads
+          if git diff --cached --quiet; then echo "no new covers"; exit 0; fi
+          git commit -m "أغلفة تيك توك تلقائية"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && break; sleep 5; done
