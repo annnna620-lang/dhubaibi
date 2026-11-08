@@ -784,3 +784,60 @@ h2{font-size:clamp(30px,4vw,46px);color:var(--ink);letter-spacing:-.3px}
 .arv-disc{font-size:12px;color:#8a8170;text-align:center;margin:0;line-height:1.7}
 
 .arv-stage.photo{background:linear-gradient(#f7f4ee 0%,#f7f4ee 62%,#e6dece 62%,#ddd3bf 100%)}
+
+/* أدوات الهيدر: بحث ومفضلة */
+.nav-tools{display:flex;gap:6px;margin-inline-start:auto;margin-inline-end:10px}
+.nt-btn{position:relative;width:42px;height:42px;border-radius:50%;border:1px solid rgba(219,184,60,.35);background:rgba(255,255,255,.04);display:grid;place-items:center;cursor:pointer;color:#e8c766;transition:.25s}
+.nt-btn:hover{background:rgba(219,184,60,.14)}
+.nt-btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+#ntFav svg{fill:currentColor;stroke:none}
+.nt-btn b{position:absolute;top:-4px;left:-4px;min-width:19px;height:19px;border-radius:99px;background:#e8c766;color:#111;font-size:11px;font-weight:800;display:grid;place-items:center;padding:0 4px}
+.nt-btn b[hidden]{display:none}
+.nt-btn.pop{animation:ntpop .45s var(--ease)}
+@keyframes ntpop{40%{transform:scale(1.25)}}
+@media (max-width:900px){.nav-tools{margin-inline-end:6px}.nt-btn{width:38px;height:38px}}
+/* قلب المفضلة على البطاقات */
+.fav-h{position:absolute;top:10px;left:10px;z-index:3;width:38px;height:38px;border-radius:50%;border:0;background:rgba(255,255,255,.92);display:grid;place-items:center;cursor:pointer;box-shadow:0 6px 16px -8px rgba(0,0,0,.4);transition:transform .25s}
+.fav-h svg{width:19px;height:19px;fill:none;stroke:#8a7a55;stroke-width:2}
+.fav-h.on svg{fill:#c9a54a;stroke:#c9a54a}
+.fav-h:active{transform:scale(.88)}
+.fav-pd svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;vertical-align:-3px}
+.fav-pd.on svg{fill:#c9a54a;stroke:#c9a54a}
+/* اللوحة المنزلقة (بحث / مفضلة) */
+.xs{position:fixed;inset:0;z-index:210;background:rgba(10,9,7,.6);backdrop-filter:blur(5px);display:flex;justify-content:center;align-items:flex-start;padding:70px 12px 12px;animation:fadeIn .25s}
+.xs-box{width:min(620px,100%);max-height:calc(100vh - 90px);display:flex;flex-direction:column;background:#faf7f0;border-radius:22px;overflow:hidden;box-shadow:0 30px 70px -30px rgba(0,0,0,.6)}
+.xs-top{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid #eee5d3}
+.xs-top b{font-size:17px}
+.xs-x{border:0;background:#eee6d4;width:34px;height:34px;border-radius:50%;cursor:pointer}
+.xs-body{overflow:auto;padding:14px 16px 18px}
+.xs-search{display:flex;align-items:center;gap:10px;background:#fff;border:1.5px solid #e2d7bf;border-radius:14px;padding:4px 14px;margin-bottom:12px}
+.xs-search svg{width:20px;height:20px;fill:none;stroke:#8a7a55;stroke-width:2;flex:none}
+.xs-search input{flex:1;min-width:0;border:0;outline:0;font:inherit;font-size:16px;padding:10px 0;background:transparent}
+.xs-list{display:flex;flex-direction:column;gap:8px}
+.xs-item{display:flex;align-items:center;gap:12px;padding:8px;border-radius:14px;background:#fff;border:1px solid #efe7d6;text-decoration:none;color:inherit;transition:.2s}
+.xs-item:hover{border-color:var(--gold)}
+.xs-img{width:62px;height:62px;border-radius:10px;overflow:hidden;background:#f2ede1;flex:none}
+.xs-img img{width:100%;height:100%;object-fit:contain}
+.xs-txt{flex:1;min-width:0;display:flex;flex-direction:column}
+.xs-txt small{color:#a8871a;font-size:12px;font-weight:700}
+.xs-txt b{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.xs-txt i{font-style:normal;font-size:13px;color:#6b604a}
+.xs-del{border:0;background:#f4eee2;width:32px;height:32px;border-radius:50%;cursor:pointer;flex:none}
+.xs-n{font-size:13px;color:#8a7a55;margin:0 4px 4px}
+.xs-empty{text-align:center;color:#6b604a;padding:20px 10px;line-height:1.8}
+.xs-empty a{color:#a8871a;font-weight:800}
+.xs-heart svg{width:46px;height:46px;fill:#e8dcc0}
+.xs-chips{display:flex;flex-wrap:wrap;gap:8px}
+.xs-chips a{padding:9px 16px;border-radius:99px;background:#fff;border:1px solid #e2d7bf;text-decoration:none;color:inherit;font-weight:700}
+.xs-send{margin-top:14px;width:100%;justify-content:center}
+.xs-note{text-align:center;font-size:12.5px;color:#8a8170;margin:8px 0 0}
+@media (max-width:520px){
+  .nav-in{gap:8px}
+  .brand{min-width:0;flex:1 1 auto}
+  .brand span{min-width:0}
+  .brand span b{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}
+  .brand span small{display:none}
+  .nav-tools{margin:0;gap:5px;flex:none}
+  .nt-btn{width:36px;height:36px}
+  .burger{flex:none}
+}

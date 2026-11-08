@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Sitemap: https://annnna620-lang.github.io/dhubaibi/sitemap.xml
