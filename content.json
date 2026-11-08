@@ -1631,7 +1631,25 @@
             "w": 44,
             "d": 45,
             "h": 100
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-9c6de4b770.glb",
+              "img": "uploads/arp-f7df681374.png",
+              "from": "uploads/barc01-cc6138.webp",
+              "name": "أسود",
+              "hex": "#1d1d1d",
+              "size": "ارتفاع 100 سم"
+            },
+            {
+              "glb": "uploads/arm-b019245569.glb",
+              "img": "uploads/arp-dd30e89272.png",
+              "from": "uploads/barc05-33d4a8.webp",
+              "name": "بني",
+              "hex": "#7a4a2c",
+              "size": "ارتفاع 100 سم"
+            }
+          ]
         },
         {
           "id": "9d78282a",
@@ -1709,7 +1727,25 @@
             "w": 44,
             "d": 45,
             "h": 100
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-ab6318dadb.glb",
+              "img": "uploads/arp-b62e2d5bb1.png",
+              "from": "uploads/barc03-9710e3.webp",
+              "name": "بني",
+              "hex": "#7a4a2c",
+              "size": "ارتفاع 100 سم"
+            },
+            {
+              "glb": "uploads/arm-56df11ddcc.glb",
+              "img": "uploads/arp-5774b527c2.png",
+              "from": "uploads/barc08-1e20cc.webp",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "size": "ارتفاع 100 سم"
+            }
+          ]
         },
         {
           "id": "586a52ac",
@@ -1772,7 +1808,17 @@
             "w": 44,
             "d": 45,
             "h": 100
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-bf7e835c24.glb",
+              "img": "uploads/arp-bf7785061d.png",
+              "from": "uploads/barc07-5feff7.webp",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "size": "ارتفاع 100 سم"
+            }
+          ]
         },
         {
           "id": "1dfba48d",
@@ -1869,7 +1915,41 @@
             "w": 44,
             "d": 45,
             "h": 100
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-3ac1377383.glb",
+              "img": "uploads/arp-0f4330e9dd.png",
+              "from": "uploads/barc11-99b7b5.webp",
+              "name": "أسود",
+              "hex": "#1d1d1d",
+              "size": "ارتفاع 100 سم"
+            },
+            {
+              "glb": "uploads/arm-f6148d5283.glb",
+              "img": "uploads/arp-ad21690676.png",
+              "from": "uploads/barc18-7fe88a.webp",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "size": "ارتفاع 100 سم"
+            },
+            {
+              "glb": "uploads/arm-fe9db59707.glb",
+              "img": "uploads/arp-4b6fdc5b50.png",
+              "from": "uploads/barc21-71b9df.webp",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "size": "ارتفاع 100 سم"
+            },
+            {
+              "glb": "uploads/arm-8fac792f1b.glb",
+              "img": "uploads/arp-5886d3d589.png",
+              "from": "uploads/barc22-2d4910.webp",
+              "name": "بني",
+              "hex": "#7a4a2c",
+              "size": "ارتفاع 100 سم"
+            }
+          ]
         },
         {
           "id": "8eb1ed21",
@@ -1956,7 +2036,33 @@
             "w": 44,
             "d": 45,
             "h": 100
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-c88b452e53.glb",
+              "img": "uploads/arp-53698b1002.png",
+              "from": "uploads/barc12-ce4386.webp",
+              "name": "أسود",
+              "hex": "#1d1d1d",
+              "size": "ارتفاع 100 سم"
+            },
+            {
+              "glb": "uploads/arm-17c6585c76.glb",
+              "img": "uploads/arp-bf9a46cebe.png",
+              "from": "uploads/barc17-920da9.webp",
+              "name": "بني",
+              "hex": "#7a4a2c",
+              "size": "ارتفاع 100 سم"
+            },
+            {
+              "glb": "uploads/arm-f442907ade.glb",
+              "img": "uploads/arp-2aa49b6a15.png",
+              "from": "uploads/barc19-58ebae.webp",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "size": "ارتفاع 100 سم"
+            }
+          ]
         },
         {
           "id": "383363ac",
@@ -2043,7 +2149,33 @@
             "w": 44,
             "d": 45,
             "h": 100
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-790080f600.glb",
+              "img": "uploads/arp-0c87f53db7.png",
+              "from": "uploads/barc14-a09a43.webp",
+              "name": "بني",
+              "hex": "#7a4a2c",
+              "size": "ارتفاع 100 سم"
+            },
+            {
+              "glb": "uploads/arm-a704f06f69.glb",
+              "img": "uploads/arp-2918e32ff2.png",
+              "from": "uploads/barc16-d050ff.webp",
+              "name": "أسود",
+              "hex": "#1d1d1d",
+              "size": "ارتفاع 100 سم"
+            },
+            {
+              "glb": "uploads/arm-46ba113072.glb",
+              "img": "uploads/arp-5d35df9b28.png",
+              "from": "uploads/barc20-8e60e2.webp",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "size": "ارتفاع 100 سم"
+            }
+          ]
         },
         {
           "id": "5792ba38",
@@ -2115,7 +2247,33 @@
             "w": 44,
             "d": 45,
             "h": 100
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-b58b7af4be.glb",
+              "img": "uploads/arp-ff74991507.png",
+              "from": "uploads/barc23-70fd17.webp",
+              "name": "أسود",
+              "hex": "#1d1d1d",
+              "size": "ارتفاع 100 سم"
+            },
+            {
+              "glb": "uploads/arm-f1399c4c3d.glb",
+              "img": "uploads/arp-b9ecfb99ec.png",
+              "from": "uploads/barc24-85b365.webp",
+              "name": "بني",
+              "hex": "#7a4a2c",
+              "size": "ارتفاع 100 سم"
+            },
+            {
+              "glb": "uploads/arm-fe5fb7405a.glb",
+              "img": "uploads/arp-c12b6d3214.png",
+              "from": "uploads/barc25-774bb3.webp",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "size": "ارتفاع 100 سم"
+            }
+          ]
         },
         {
           "id": "a0a33099",
@@ -2186,7 +2344,33 @@
             "w": 44,
             "d": 45,
             "h": 100
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-48a8b6a25c.glb",
+              "img": "uploads/arp-a0a6e36601.png",
+              "from": "uploads/barc26-2b4851.webp",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "size": "ارتفاع 100 سم"
+            },
+            {
+              "glb": "uploads/arm-17955a3e74.glb",
+              "img": "uploads/arp-c31d7209ed.png",
+              "from": "uploads/barc27-e81718.webp",
+              "name": "أبيض",
+              "hex": "#f2f2f2",
+              "size": "ارتفاع 100 سم"
+            },
+            {
+              "glb": "uploads/arm-9144abc569.glb",
+              "img": "uploads/arp-358330b9ff.png",
+              "from": "uploads/barc28-c1827a.webp",
+              "name": "أسود",
+              "hex": "#1d1d1d",
+              "size": "ارتفاع 100 سم"
+            }
+          ]
         },
         {
           "id": "cc93a74e",
@@ -2247,7 +2431,25 @@
             "w": 44,
             "d": 45,
             "h": 100
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-866b99ca49.glb",
+              "img": "uploads/arp-9ead878cd7.png",
+              "from": "uploads/barc29-53d99d.webp",
+              "name": "أسود",
+              "hex": "#1d1d1d",
+              "size": "ارتفاع 100 سم"
+            },
+            {
+              "glb": "uploads/arm-2207f4b5f7.glb",
+              "img": "uploads/arp-db7fb14b3d.png",
+              "from": "uploads/barc32-e28821.webp",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "size": "ارتفاع 100 سم"
+            }
+          ]
         },
         {
           "id": "5d183f06",
@@ -2308,7 +2510,25 @@
             "w": 44,
             "d": 45,
             "h": 100
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-d2aac36699.glb",
+              "img": "uploads/arp-29c6404698.png",
+              "from": "uploads/barc31-75872d.webp",
+              "name": "بني",
+              "hex": "#7a4a2c",
+              "size": "ارتفاع 100 سم"
+            },
+            {
+              "glb": "uploads/arm-4157fc0019.glb",
+              "img": "uploads/arp-5f7bc006ef.png",
+              "from": "uploads/barc30-19934c.webp",
+              "name": "أبيض",
+              "hex": "#f2f2f2",
+              "size": "ارتفاع 100 سم"
+            }
+          ]
         },
         {
           "id": "81b2b68a",
@@ -2365,7 +2585,17 @@
             "w": 44,
             "d": 45,
             "h": 100
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-b24aecab8a.glb",
+              "img": "uploads/arp-5ad3e1e673.png",
+              "from": "uploads/barc33-f2636c.webp",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "size": "ارتفاع 100 سم"
+            }
+          ]
         },
         {
           "id": "1c5799db",
@@ -2425,7 +2655,25 @@
             "w": 44,
             "d": 45,
             "h": 100
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-7017d88ad3.glb",
+              "img": "uploads/arp-d4449bc396.png",
+              "from": "uploads/barc34-6a776b.webp",
+              "name": "أسود",
+              "hex": "#1d1d1d",
+              "size": "ارتفاع 100 سم"
+            },
+            {
+              "glb": "uploads/arm-d36021ef24.glb",
+              "img": "uploads/arp-85036f982b.png",
+              "from": "uploads/barc35-52f9da.webp",
+              "name": "أبيض",
+              "hex": "#f2f2f2",
+              "size": "ارتفاع 100 سم"
+            }
+          ]
         },
         {
           "id": "984a6a0e",
@@ -2491,7 +2739,25 @@
             "w": 200,
             "d": 43,
             "h": 40
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-c3f3763815.glb",
+              "img": "uploads/arp-84e3a354e0.png",
+              "from": "uploads/tvc06-728135.webp",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "size": "200 × 43 × 40 سم"
+            },
+            {
+              "glb": "uploads/arm-ae9850b5ea.glb",
+              "img": "uploads/arp-855d2a02fb.png",
+              "from": "uploads/tvc07-c5681f.webp",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "size": "200 × 43 × 40 سم"
+            }
+          ]
         },
         {
           "id": "0d4c993a",
@@ -2557,7 +2823,25 @@
             "w": 180,
             "d": 43,
             "h": 40
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-fc5d3688c7.glb",
+              "img": "uploads/arp-c7e14390c4.png",
+              "from": "uploads/tvc09-a0a3e4.webp",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "size": "180 × 43 × 40 سم"
+            },
+            {
+              "glb": "uploads/arm-904f1831a3.glb",
+              "img": "uploads/arp-b1ca08e34d.png",
+              "from": "uploads/tvc10-27ccde.webp",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "size": "180 × 43 × 40 سم"
+            }
+          ]
         },
         {
           "id": "6a7ceff4",
@@ -2623,7 +2907,25 @@
             "w": 160,
             "d": 43,
             "h": 40
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-cfef05ed9a.glb",
+              "img": "uploads/arp-bfb7d282b7.png",
+              "from": "uploads/tvc11-232081.webp",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "size": "160 × 43 × 40 سم"
+            },
+            {
+              "glb": "uploads/arm-09f32d0510.glb",
+              "img": "uploads/arp-eac3cc283d.png",
+              "from": "uploads/tvc08-50e32a.webp",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "size": "160 × 43 × 40 سم"
+            }
+          ]
         },
         {
           "id": "a4c3d5fa",
@@ -2699,7 +3001,33 @@
             "w": 180,
             "d": 40,
             "h": 45
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-c9fc8d8280.glb",
+              "img": "uploads/arp-a5c1ff50a0.png",
+              "from": "uploads/tvc01-7eadc4.webp",
+              "name": "سنديان فاتح",
+              "hex": "#cdbb9b",
+              "size": "180 × 40 × 45 سم"
+            },
+            {
+              "glb": "uploads/arm-df8a36e515.glb",
+              "img": "uploads/arp-562448c71b.png",
+              "from": "uploads/tvc02-fbc91f.webp",
+              "name": "خشبي طبيعي",
+              "hex": "#b08a5a",
+              "size": "180 × 40 × 45 سم"
+            },
+            {
+              "glb": "uploads/arm-cd29361003.glb",
+              "img": "uploads/arp-6920883498.png",
+              "from": "uploads/tvc04-28ee3f.webp",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "size": "180 × 40 × 45 سم"
+            }
+          ]
         },
         {
           "id": "82e70841",
@@ -2755,7 +3083,17 @@
             "w": 200,
             "d": 40,
             "h": 45
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-b90ecb49d7.glb",
+              "img": "uploads/arp-f35cd79147.png",
+              "from": "uploads/tvc03-f94800.webp",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "size": "200 × 40 × 45 سم"
+            }
+          ]
         },
         {
           "id": "e679f84d",
@@ -2826,7 +3164,25 @@
             "w": 120,
             "h": 90,
             "d": 30
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-e313445a83.glb",
+              "img": "uploads/arp-0e1e8ef8cf.png",
+              "from": "uploads/tvc12-8fbafc.webp",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "size": "120 × 30 × 90 سم"
+            },
+            {
+              "glb": "uploads/arm-e6cadd09f6.glb",
+              "img": "uploads/arp-a5393b5836.png",
+              "from": "uploads/tvc13-dbaa0d.webp",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "size": "120 × 30 × 90 سم"
+            }
+          ]
         },
         {
           "id": "f6252803",
@@ -2897,7 +3253,25 @@
             "w": 120,
             "h": 90,
             "d": 30
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-f60e31b276.glb",
+              "img": "uploads/arp-e07f5a321a.png",
+              "from": "uploads/tvc17-ce1d2d.webp",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "size": "120 × 30 × 90 سم"
+            },
+            {
+              "glb": "uploads/arm-cf52868231.glb",
+              "img": "uploads/arp-dd12a5e433.png",
+              "from": "uploads/tvc14-33652c.webp",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "size": "120 × 30 × 90 سم"
+            }
+          ]
         },
         {
           "id": "6006181e",
@@ -2968,7 +3342,25 @@
             "w": 120,
             "h": 90,
             "d": 30
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-628824e18f.glb",
+              "img": "uploads/arp-8fa45b2333.png",
+              "from": "uploads/tvc15-7ce6e0.webp",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "size": "120 × 30 × 90 سم"
+            },
+            {
+              "glb": "uploads/arm-02beec738a.glb",
+              "img": "uploads/arp-a2e72afaf7.png",
+              "from": "uploads/tvc16-529374.webp",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "size": "120 × 30 × 90 سم"
+            }
+          ]
         },
         {
           "id": "a9cf263a",
@@ -3039,7 +3431,25 @@
             "w": 120,
             "h": 90,
             "d": 30
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-aafa8448a5.glb",
+              "img": "uploads/arp-b89f74be86.png",
+              "from": "uploads/tvc18-9ba4fa.webp",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "size": "120 × 30 × 90 سم"
+            },
+            {
+              "glb": "uploads/arm-bf3cdf2114.glb",
+              "img": "uploads/arp-8131dca20c.png",
+              "from": "uploads/tvc21-1ae065.webp",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "size": "120 × 30 × 90 سم"
+            }
+          ]
         },
         {
           "id": "09d7aba9",
@@ -3110,7 +3520,25 @@
             "w": 120,
             "h": 90,
             "d": 30
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-c1d6234b17.glb",
+              "img": "uploads/arp-6b99c42baf.png",
+              "from": "uploads/tvc19-f7afa6.webp",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "size": "120 × 30 × 90 سم"
+            },
+            {
+              "glb": "uploads/arm-1e07a79ec9.glb",
+              "img": "uploads/arp-13ea03d0ba.png",
+              "from": "uploads/tvc20-a3fded.webp",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "size": "120 × 30 × 90 سم"
+            }
+          ]
         },
         {
           "id": "f9f67e69",
@@ -3181,7 +3609,25 @@
             "w": 120,
             "h": 90,
             "d": 30
-          }
+          },
+          "arPhoto": [
+            {
+              "glb": "uploads/arm-d98034e4ff.glb",
+              "img": "uploads/arp-9dffe216ba.png",
+              "from": "uploads/tvc23-36aa16.webp",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "size": "120 × 30 × 90 سم"
+            },
+            {
+              "glb": "uploads/arm-f64d1338d3.glb",
+              "img": "uploads/arp-d8470fac2d.png",
+              "from": "uploads/tvc22-7b87f6.webp",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "size": "120 × 30 × 90 سم"
+            }
+          ]
         }
       ],
       "branchDept": "الأثاث"

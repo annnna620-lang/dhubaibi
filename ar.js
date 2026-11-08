@@ -55,44 +55,38 @@
   }
 
 
-  // ---------- الأثاث: مجسم 3D تقريبي بالمقاس الحقيقي (من مواصفات المنتج) ----------
-  window.hasModel3D = (p) => !!(p && p.model3d && window.cz3dBuild);
+  // ---------- الأثاث: صورة المنتج الحقيقية مقصوصة وواقفة بمقاسها الحقيقي ----------
+  window.hasModel3D = (p) => !!(p && (p.arPhoto || []).length);
   window.openModelAR = async function (p, startHex) {
-    const cols = (p.colors || []).filter(x => /^#[0-9a-f]{6}$/i.test(x.hex || ''));
-    let ci = Math.max(0, cols.findIndex(x => x.hex === startHex));
-    const m = p.model3d, dims = `${m.w} × ${m.d} × ${m.h} سم`;
+    const items = p.arPhoto;
+    let ci = Math.max(0, items.findIndex(x => x.hex && x.hex === startHex));
     const ov = document.createElement('div'); ov.className = 'arv';
     ov.innerHTML = `<div class="arv-box" role="dialog" aria-label="شوفها في بيتك">
       <div class="arv-top"><b>${e(p.name)}</b><button class="arv-x" aria-label="إغلاق">✕</button></div>
-      <div class="arv-stage"><div class="arv-load">جاري تجهيز المجسم...</div></div>
-      <div class="arv-hint">↻ اسحب بإصبعك عشان تدوّرها • المقاس الحقيقي: <b dir="ltr">${e(dims)}</b></div>
-      ${cols.length > 1 ? `<div class="arv-row"><span>اللون</span><div class="arv-sw">${cols.map((x, i) => `<button class="${i === ci ? 'on' : ''}" data-c="${i}" title="${e(x.name)}"><i style="background:${e(x.hex)}"></i><small>${e(x.name)}</small></button>`).join('')}</div></div>` : ''}
+      <div class="arv-stage"><div class="arv-load">جاري التجهيز...</div></div>
+      <div class="arv-hint">المقاس الحقيقي: <b dir="ltr" class="arv-size"></b></div>
+      ${items.length > 1 ? `<div class="arv-row"><span>اللون</span><div class="arv-cols">${items.map((x, i) => `<button class="${i === ci ? 'on' : ''}" data-c="${i}" title="${e(x.name)}"><img src="${e(x.img)}" alt="" style="object-fit:contain;background:#f6f3ec"></button>`).join('')}</div></div>` : ''}
       <button class="arv-go" type="button"><span>📱</span> شوفها في بيتك بالكاميرا</button>
       <div class="arv-note"></div>
-      <p class="arv-disc">مجسم توضيحي مبسّط بالمقاس الحقيقي — يوضح الحجم والمكان. التفاصيل والنقشات الدقيقة في صور المنتج.</p>
+      <p class="arv-disc">بالكاميرا تنحط صورة المنتج الحقيقية بمقاسه في مكانك — قف قدامها عشان تشوفها بأفضل شكل.</p>
     </div>`;
     document.body.append(ov); document.body.style.overflow = 'hidden';
-    const urls = {};
-    const close = () => { ov.remove(); document.body.style.overflow = ''; Object.values(urls).forEach(u => URL.revokeObjectURL(u)); };
+    const close = () => { ov.remove(); document.body.style.overflow = ''; };
     ov.querySelector('.arv-x').onclick = close;
     ov.addEventListener('click', (ev) => { if (ev.target === ov) close(); });
     try { await loadMV(); } catch { ov.querySelector('.arv-load').textContent = 'تعذّر تحميل العارض — تأكد من الإنترنت'; return; }
     const mv = document.createElement('model-viewer');
-    for (const [k, v] of Object.entries({ 'camera-controls': '', 'touch-action': 'pan-y', 'auto-rotate': '', 'auto-rotate-delay': '800', 'rotation-per-second': '20deg',
-      'shadow-intensity': '1', 'shadow-softness': '.8', exposure: '1.05', 'environment-image': 'neutral', 'camera-orbit': '15deg 72deg auto', 'max-camera-orbit': 'auto 95deg auto',
-      ar: '', 'ar-modes': 'webxr quick-look', 'ar-scale': 'fixed', 'ar-placement': 'floor', 'interaction-prompt': 'none', alt: 'مجسم المنتج' })) mv.setAttribute(k, v);
+    for (const [k, v] of Object.entries({ 'camera-controls': '', 'touch-action': 'pan-y', 'shadow-intensity': '0', exposure: '1', 'environment-image': 'neutral', 'tone-mapping': 'neutral',
+      'camera-orbit': '0deg 80deg auto', 'min-camera-orbit': '-35deg 60deg auto', 'max-camera-orbit': '35deg 92deg auto', 'disable-zoom': '',
+      ar: '', 'ar-modes': 'webxr scene-viewer quick-look', 'ar-scale': 'fixed', 'ar-placement': 'floor', 'interaction-prompt': 'none', alt: 'صورة المنتج بمقاسها الحقيقي' })) mv.setAttribute(k, v);
     mv.innerHTML = '<button slot="ar-button" hidden></button>';
-    const stage = ov.querySelector('.arv-stage'); stage.append(mv);
+    const stage = ov.querySelector('.arv-stage'); stage.classList.add('photo'); stage.append(mv);
     mv.addEventListener('load', () => stage.querySelector('.arv-load')?.remove());
-    const show = () => {
-      const key = String(ci);
-      if (!urls[key]) { const st = JSON.parse(JSON.stringify(m)); if (cols[ci]) st.color = [cols[ci].name, cols[ci].hex]; urls[key] = URL.createObjectURL(window.cz3dBuild(st)); }
-      mv.src = urls[key];
-    };
+    const show = () => { const it = items[ci]; mv.src = new URL(it.glb, location.href).href; ov.querySelector('.arv-size').textContent = it.size || ''; };
     show();
-    ov.querySelector('.arv-sw')?.addEventListener('click', (ev) => {
+    ov.querySelector('.arv-cols')?.addEventListener('click', (ev) => {
       const b = ev.target.closest('button'); if (!b) return; ci = +b.dataset.c;
-      ov.querySelectorAll('.arv-sw button').forEach(x => x.classList.toggle('on', x === b)); show();
+      ov.querySelectorAll('.arv-cols button').forEach(x => x.classList.toggle('on', x === b)); show();
     });
     const note = ov.querySelector('.arv-note');
     ov.querySelector('.arv-go').onclick = async () => {
