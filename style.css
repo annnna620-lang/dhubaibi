@@ -709,3 +709,12 @@ h2{font-size:clamp(30px,4vw,46px);color:var(--ink);letter-spacing:-.3px}
 .pdept-b .btn.line{background:transparent;color:#f5efe2;border-color:rgba(245,239,226,.45)}
 .pdept-b .btn.line:hover{border-color:var(--gold);color:var(--gold-2)}
 @media (max-width:600px){.pdept{padding:22px 18px}.pdept-b{width:100%;flex-direction:column}.pdept-b .btn{width:100%}}
+
+/* صور المنتجات تظهر كاملة بدون قص */
+.pcard .pimg{background:#f6f3ec;aspect-ratio:4/5}
+.pcard .pimg img{object-fit:contain;padding:6px}
+.pcard:hover .pimg img{transform:scale(1.03)}
+.pd-main{background:#f6f3ec}
+.pd-main img{object-fit:contain}
+.pd-thumbs button{background:#f6f3ec}
+.pd-thumbs img{object-fit:contain}
