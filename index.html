@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>شركة الضبيبي التجارية</title>
+  <meta name="description" content="شركة الضبيبي التجارية — سجاد، موكيت، أثاث، إنارة، مفروشات في مكة المكرمة وجدة">
+  <meta name="theme-color" content="#0b0c0f">
+  <link rel="icon" href="assets/logo-mark.png">
+  <link rel="preload" as="image" href="assets/marble.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- شاشة البداية -->
+  <div class="splash" id="splash" aria-hidden="true"><img src="assets/logo-mark.png" alt=""><i></i></div>
+
+  <header class="nav" id="nav">
+    <i class="nav-prog" id="prog"></i>
+    <div class="wrap nav-in">
+      <a href="#top" class="brand">
+        <img data-bind-src="company.logo" src="assets/logo-mark.png" alt="">
+        <span><b data-bind="company.nameAr"></b><small data-bind="company.slogan"></small></span>
+      </a>
+      <nav class="links" id="links">
+        <a href="#about" data-sec="about">من نحن</a>
+        <a href="#categories" data-sec="categories">منتجاتنا</a>
+        <a href="#custom-intro" data-sec="custom-intro">تفصيل حسب الطلب</a>
+        <a href="#reels" data-sec="reels">ريلز</a>
+        <a href="#projects" data-sec="projects">مشاريعنا</a>
+        <a href="#reviews" data-sec="reviews">آراء العملاء</a>
+        <a href="#branches" data-sec="branches">فروعنا</a>
+        <a href="#contact" data-sec="contact">تواصل معنا</a>
+      </nav>
+      <a class="nav-cta" id="navCta" target="_blank" rel="noopener">تواصل واتساب</a>
+      <button class="burger" id="burger" aria-label="القائمة"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- صفحات القسم والمنتج -->
+  <main class="page" id="page" hidden></main>
+
+  <div id="home">
+    <!-- الواجهة -->
+    <section class="hero" id="top">
+      <div class="hero-bg" id="heroBg"><i class="glow g1"></i><i class="glow g2"></i></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="hero-eyebrow h-in" style="--i:0"><i></i><span data-bind="company.slogan"></span></span>
+          <h1 class="hero-title" id="heroTitle"></h1>
+          <p class="hero-sub h-in" style="--i:3" data-bind="company.heroSubtitle"></p>
+          <div class="hero-cta h-in" style="--i:4">
+            <a class="btn gold" href="#categories"><span>تصفح منتجاتنا</span><b class="arr">←</b></a>
+            <a class="btn ghost" id="heroWa" target="_blank" rel="noopener"></a>
+          </div>
+          <a class="hero-custom h-in" style="--i:5" href="#custom">
+            <span class="hc-ic">✦</span>
+            <span class="hc-t"><b>نفصّل لك حسب الطلب</b><small>غرف نوم • طاولات طعام وخدمة • ركن قهوة • مداخل — صمّم قطعتك بمقاساتك</small></span>
+            <span class="hc-go">ابدأ ←</span>
+          </a>
+          <div class="hero-stats h-in" style="--i:6" id="heroStats"></div>
+        </div>
+        <div class="hero-show h-in" style="--i:2" id="heroShow">
+          <div class="hs-frame"></div>
+          <div class="hs-slides" id="hsSlides"></div>
+          <a class="hs-card" id="hsCard"></a>
+          <div class="hs-dots" id="hsDots"></div>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true"><div class="mq-track" id="mq"></div></div>
+      <a class="scroll-cue" href="#about" aria-label="انزل"><i></i></a>
+    </section>
+
+    <!-- من نحن -->
+    <section class="sec" id="about">
+      <div class="wrap about-grid">
+        <div class="about-media" data-r="right">
+          <div class="am-frame"></div>
+          <div class="am-img" id="aboutMedia"></div>
+          <div class="am-badge"><img data-bind-src="company.logo" src="assets/logo-mark.png" alt=""><span data-bind="company.slogan"></span></div>
+        </div>
+        <div class="about-copy">
+          <span class="eyebrow" data-r>تعرّف علينا</span>
+          <h2 data-r data-bind="about.title"></h2>
+          <p class="lead" data-r data-bind="about.text"></p>
+          <div class="vm" data-stagger>
+            <div class="vm-card" data-r><span class="vm-ic">◈</span><div><h3>رؤيتنا</h3><p data-bind="about.vision"></p></div></div>
+            <div class="vm-card" data-r><span class="vm-ic">◆</span><div><h3>رسالتنا</h3><p data-bind="about.mission"></p></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="wrap"><div class="values" id="values" data-stagger></div></div>
+    </section>
+
+    <!-- الأقسام -->
+    <section class="sec alt" id="categories">
+      <div class="wrap">
+        <div class="sec-head split" data-r>
+          <div><span class="eyebrow">ما نقدّمه</span><h2>أقسامنا ومنتجاتنا</h2></div>
+          <p>اختر القسم لتشاهد المنتجات بألوانها وتفاصيلها، واطلب من أقرب فرع لك مباشرة.</p>
+        </div>
+        <div class="bento" id="catGrid" data-stagger></div>
+      </div>
+    </section>
+
+    <!-- تفصيل حسب الطلب -->
+    <section class="sec dark" id="custom-intro">
+      <div class="wrap">
+        <div class="sec-head split" data-r>
+          <div><span class="eyebrow">خدمة التفصيل</span><h2>تفصيل حسب الطلب</h2></div>
+          <p style="color:#cfc8b6">صمّم قطعتك بمقاساتك: ارفع صورة لقطعة أعجبتك، حدد المقاسات والخامات والألوان، ونرسل المخطط لأقرب فرع.</p>
+        </div>
+        <div class="cz-tiles" id="czTiles" data-stagger></div>
+        <div style="text-align:center;margin-top:30px" data-r><a class="btn gold" href="#custom"><span>ابدأ التصميم الآن</span><b class="arr">←</b></a></div>
+      </div>
+    </section>
+
+    <!-- منتجات مختارة -->
+    <section class="sec" id="featured">
+      <div class="wrap">
+        <div class="sec-head split" data-r>
+          <div><span class="eyebrow">الأكثر طلباً</span><h2>منتجات مختارة</h2></div>
+          <div class="scroller-nav"><button type="button" data-dir="1" aria-label="السابق">→</button><button type="button" data-dir="-1" aria-label="التالي">←</button></div>
+        </div>
+        <div class="scroller" id="featRow"></div>
+      </div>
+    </section>
+
+    <!-- التقسيط -->
+    <section class="sec pay-sec" id="installments">
+      <div class="wrap">
+        <div class="pay-card" data-r="zoom">
+          <div class="pay-copy"><span class="eyebrow">خدمة التقسيط</span><h2 id="payTitle"></h2><p id="paySub"></p></div>
+          <div class="pay-logos" id="payLogos"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- الريلز -->
+    <section class="sec dark" id="reels">
+      <div class="wrap">
+        <div class="sec-head split" data-r>
+          <div><span class="eyebrow">شاهد معرضنا</span><h2>ريلز الضبيبي</h2></div>
+          <div class="scroller-nav"><button type="button" data-dir="1" aria-label="السابق">→</button><button type="button" data-dir="-1" aria-label="التالي">←</button></div>
+        </div>
+        <div class="reels scroller" id="reelRow"></div>
+      </div>
+    </section>
+
+    <!-- المشاريع -->
+    <section class="sec" id="projects">
+      <div class="wrap">
+        <div class="sec-head" data-r><span class="eyebrow">أعمالنا</span><h2>مشاريع نفخر بها</h2></div>
+        <div class="cards" id="projGrid" data-stagger></div>
+      </div>
+    </section>
+
+    <!-- العملاء -->
+    <section class="sec alt" id="clients">
+      <div class="wrap">
+        <div class="sec-head" data-r><span class="eyebrow">ثقة نعتز بها</span><h2>عملاؤنا</h2></div>
+        <div class="clients" id="clientGrid" data-stagger></div>
+      </div>
+    </section>
+
+    <!-- آراء العملاء -->
+    <section class="sec dark" id="reviews">
+      <div class="wrap">
+        <div class="sec-head" data-r><span class="eyebrow">تقييمات حقيقية من خرائط جوجل</span><h2>ماذا يقول عملاؤنا</h2></div>
+        <div class="reviews scroller" id="reviewRow"></div>
+      </div>
+    </section>
+
+    <!-- الفروع -->
+    <section class="sec" id="branches">
+      <div class="wrap">
+        <div class="sec-head split" data-r>
+          <div><span class="eyebrow">زورونا</span><h2>فروعنا</h2></div>
+          <div class="chips" id="cityChips"></div>
+        </div>
+        <div class="branches" id="branchGrid"></div>
+      </div>
+    </section>
+
+    <!-- التواصل -->
+    <section class="sec" id="contact">
+      <div class="wrap">
+        <div class="cta-card" data-r="zoom">
+          <div class="cta-copy">
+            <span class="eyebrow">يسعدنا خدمتكم</span>
+            <h2>جاهزين نساعدك تختار <span class="gold-text">لمسة الفخامة</span> لمكانك</h2>
+            <p>راسلنا على الواتساب أو اتصل بنا، أو زر أقرب فرع لك.</p>
+          </div>
+          <div class="cta-side">
+            <div class="contact-btns" id="contactBtns"></div>
+            <div class="social" id="social"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="foot">
+    <div class="wrap foot-grid">
+      <div class="foot-brand">
+        <img src="assets/logo-name-white.png" alt="" class="foot-name">
+        <p data-bind="company.tagline"></p>
+        <div class="social sm" id="footSocial"></div>
+      </div>
+      <div><h4>روابط سريعة</h4><nav class="foot-links">
+        <a href="#about">من نحن</a><a href="#categories">منتجاتنا</a><a href="#reviews">آراء العملاء</a><a href="#branches">فروعنا</a><a href="#contact">تواصل معنا</a></nav></div>
+      <div><h4>أقسامنا</h4><nav class="foot-links" id="footCats"></nav></div>
+      <div><h4>تواصل</h4><div class="foot-links" id="footContact"></div></div>
+    </div>
+    <div class="wrap foot-bottom">© <span id="year"></span> <span data-bind="company.nameAr"></span> — جميع الحقوق محفوظة</div>
+  </footer>
+
+  <!-- أزرار عائمة -->
+  <a class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="واتساب"></a>
+  <button class="to-top" id="toTop" aria-label="للأعلى"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="16"/><circle class="ring" id="topRing" cx="18" cy="18" r="16"/></svg><b>↑</b></button>
+  <nav class="mbar" id="mbar">
+    <a id="mbWa" target="_blank" rel="noopener"></a>
+    <a id="mbCall"></a>
+    <a href="#categories" id="mbShop"></a>
+    <a href="#branches" id="mbBr"></a>
+  </nav>
+
+  <div class="rplayer" id="rp" hidden>
+    <button class="lb-x" id="rpX" aria-label="إغلاق">✕</button>
+    <div class="rp-track" id="rpTrack"></div>
+  </div>
+
+  <div class="lightbox" id="lb" hidden>
+    <button class="lb-x" id="lbX" aria-label="إغلاق">✕</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="السابق">›</button>
+    <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="التالي">‹</button>
+  </div>
+
+  <script src="static.js"></script>
+  <script src="app.js"></script>
+  <script src="custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,3100 @@
+{
+  "company": {
+    "nameAr": "شركة الضبيبي التجارية",
+    "nameEn": "AL-DHUBAIBI TRADING CO.",
+    "logo": "assets/logo-mark.png",
+    "tagline": "سجاد - موكيت - أثاث - إنارة - مفروشات",
+    "slogan": "#لمسة_من_الفخامة",
+    "heroTitle": "نصنع الفخامة في كل زاوية من مساحتك",
+    "heroSubtitle": "حلول متكاملة في السجاد والموكيت والأثاث والإنارة والمفروشات، للمنازل والقصور والمشاريع التجارية.",
+    "heroImage": "",
+    "heroButton": "تواصل معنا"
+  },
+  "about": {
+    "title": "من نحن",
+    "text": "شركة الضبيبي التجارية متخصصة في توريد وتنفيذ السجاد والموكيت والأثاث والإنارة والمفروشات. نجمع بين جودة الخامات ودقة التنفيذ وذوق التصميم لنقدّم لعملائنا مساحات تليق بهم. (عدّل هذا النص من لوحة التحكم)",
+    "image": "uploads/p29-48bca4.webp",
+    "vision": "أن نكون الخيار الأول في المملكة لتأثيث المساحات بفخامة وجودة عالية.",
+    "mission": "تقديم منتجات مختارة بعناية وخدمة احترافية من الاستشارة حتى التركيب، بأسعار منافسة والتزام بالمواعيد.",
+    "values": [
+      {
+        "title": "الجودة",
+        "text": "خامات مختارة بعناية من أفضل المصادر."
+      },
+      {
+        "title": "الالتزام",
+        "text": "نلتزم بالمواعيد والمواصفات المتفق عليها."
+      },
+      {
+        "title": "الذوق",
+        "text": "تصاميم تجمع بين الأصالة والحداثة."
+      },
+      {
+        "title": "خدمة العملاء",
+        "text": "متابعة مستمرة قبل البيع وبعده."
+      }
+    ],
+    "stats": [
+      {
+        "number": "5",
+        "label": "أقسام رئيسية"
+      },
+      {
+        "number": "+100",
+        "label": "مشروع منفّذ"
+      },
+      {
+        "number": "+1000",
+        "label": "عميل سعيد"
+      }
+    ]
+  },
+  "categories": [
+    {
+      "id": "c1",
+      "title": "السجاد",
+      "description": "سجاد كلاسيك ومودرن ودائري بتشكيلة واسعة من التصاميم والألوان والمقاسات، للمجالس والصالات وغرف النوم.",
+      "cover": "",
+      "images": [
+        {
+          "src": "uploads/mw7k1vqy-35fb91c4.webp",
+          "caption": ""
+        }
+      ],
+      "products": [
+        {
+          "id": "66a85797",
+          "name": "سجادة الأغصان",
+          "images": [
+            {
+              "src": "uploads/rugf06-5ee30f.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/rugf07-4e9e14.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/rugf08-e2bd6d.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/rugf09-9b379a.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/rugf05-2bf0a2.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "سجادة عصرية بأرضية هادئة وإطار رفيع، تزيّنها أغصان وزهور ملونة منسابة على أحد أطرافها، تضيف لمسة فنية راقية للصالات والمجالس الحديثة.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والسعر.",
+          "colors": [
+            {
+              "id": "52a2675e",
+              "name": "كريمي متعدد",
+              "hex": "#e9e1cf",
+              "image": "uploads/rugf06-5ee30f.webp"
+            },
+            {
+              "id": "c69d95e6",
+              "name": "كريمي وأزرق",
+              "hex": "#5b6f93",
+              "image": "uploads/rugf07-4e9e14.webp"
+            },
+            {
+              "id": "9af2ac65",
+              "name": "كريمي وطوبي",
+              "hex": "#b0603f",
+              "image": "uploads/rugf08-e2bd6d.webp"
+            },
+            {
+              "id": "8ec2adac",
+              "name": "كريمي هادئ",
+              "hex": "#ddd3bd",
+              "image": "uploads/rugf09-9b379a.webp"
+            },
+            {
+              "id": "0f02e707",
+              "name": "رمادي",
+              "hex": "#a9a7a2",
+              "image": "uploads/rugf05-2bf0a2.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "a7074b16",
+              "label": "التصميم",
+              "value": "مودرن — أغصان وزهور"
+            },
+            {
+              "id": "2eee52db",
+              "label": "الألوان",
+              "value": "5 ألوان"
+            }
+          ],
+          "available": true,
+          "featured": true
+        },
+        {
+          "id": "4d0a9e21",
+          "name": "سجادة الزهور والفراشات",
+          "images": [
+            {
+              "src": "uploads/rugf11-356192.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/rugf12-39ccc0.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/rugf10-45d33d.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/rugf13-516b4f.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "سجادة بنقوش زهور متناثرة وفراشات بأسلوب فني ناعم مع إطار عريض بتدرجات لونية، تجمع بين الدفء والأناقة.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والسعر.",
+          "colors": [
+            {
+              "id": "9244c0c7",
+              "name": "بيج",
+              "hex": "#cdb894",
+              "image": "uploads/rugf11-356192.webp"
+            },
+            {
+              "id": "ee228a4c",
+              "name": "بيج فاتح",
+              "hex": "#d8ccb4",
+              "image": "uploads/rugf12-39ccc0.webp"
+            },
+            {
+              "id": "acadc00c",
+              "name": "إطار زيتي",
+              "hex": "#6f7357",
+              "image": "uploads/rugf10-45d33d.webp"
+            },
+            {
+              "id": "e128562a",
+              "name": "إطار عنابي",
+              "hex": "#6d2433",
+              "image": "uploads/rugf13-516b4f.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "e2295189",
+              "label": "التصميم",
+              "value": "زهور وفراشات"
+            },
+            {
+              "id": "d3c43abc",
+              "label": "الألوان",
+              "value": "4 ألوان"
+            }
+          ],
+          "available": true,
+          "featured": true
+        },
+        {
+          "id": "11148675",
+          "name": "سجادة نائين كلاسيك",
+          "images": [
+            {
+              "src": "uploads/p59-c1d5bc.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p52-5b3e2e.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p53-539312.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p54-3050d2.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p55-b06a3a.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p56-fd4bdb.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p57-740e4a.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p58-5dd2f8.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "سجادة بتصميم النائين الكلاسيكي بزخارف نباتية دقيقة وميدالية مركزية، تمنح المجالس والصالات لمسة أصيلة وفخمة. متوفرة بتشكيلة واسعة من الألوان تناسب مختلف الديكورات، ومنها المقاسات الكبيرة للمجالس.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [
+            {
+              "id": "2738b388",
+              "name": "كحلي",
+              "hex": "#1f2a44",
+              "image": "uploads/p59-c1d5bc.webp"
+            },
+            {
+              "id": "4537b0ef",
+              "name": "أزرق",
+              "hex": "#3e5d80",
+              "image": "uploads/p53-539312.webp"
+            },
+            {
+              "id": "ce098286",
+              "name": "كريمي",
+              "hex": "#e8e0cc",
+              "image": "uploads/p54-3050d2.webp"
+            },
+            {
+              "id": "dd2f42c3",
+              "name": "بيج",
+              "hex": "#c9bb9f",
+              "image": "uploads/p55-b06a3a.webp"
+            },
+            {
+              "id": "8f0113f8",
+              "name": "عاجي",
+              "hex": "#f1eee6",
+              "image": "uploads/p56-fd4bdb.webp"
+            },
+            {
+              "id": "3d497ec4",
+              "name": "بني جملي",
+              "hex": "#9b7a52",
+              "image": "uploads/p57-740e4a.webp"
+            },
+            {
+              "id": "18b12c7d",
+              "name": "رمادي",
+              "hex": "#8b8b8a",
+              "image": "uploads/p58-5dd2f8.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "0afb796a",
+              "label": "التصميم",
+              "value": "كلاسيك — نقشة النائين"
+            },
+            {
+              "id": "34d18c1f",
+              "label": "الألوان",
+              "value": "7 ألوان"
+            },
+            {
+              "id": "0344cb95",
+              "label": "الاستخدام",
+              "value": "المجالس، الصالات، غرف الضيوف"
+            }
+          ],
+          "available": true,
+          "featured": true
+        },
+        {
+          "id": "2a9a98c7",
+          "name": "سجادة الشمس — ماندالا",
+          "images": [
+            {
+              "src": "uploads/p66-e8c0d4.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p65-27cbca.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p69-51553e.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p70-4850b9.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p71-8c855e.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p72-310688.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p73-6f1e04.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "تصميم شمسي متناظر مستوحى من فن الماندالا بتفاصيل دقيقة تشد الأنظار، يجمع بين روح الكلاسيك ولمسة العصرية ويمنح المساحة حضوراً مميزاً.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [
+            {
+              "id": "1dea37cf",
+              "name": "عنابي",
+              "hex": "#7a1f2b",
+              "image": "uploads/p69-51553e.webp"
+            },
+            {
+              "id": "17a695a8",
+              "name": "رمادي",
+              "hex": "#9a9a97",
+              "image": "uploads/p65-27cbca.webp"
+            },
+            {
+              "id": "a4ace778",
+              "name": "كريمي",
+              "hex": "#e6dccb",
+              "image": "uploads/p70-4850b9.webp"
+            },
+            {
+              "id": "7472f0c6",
+              "name": "بيج",
+              "hex": "#c7b69a",
+              "image": "uploads/p71-8c855e.webp"
+            },
+            {
+              "id": "9caa923a",
+              "name": "أزرق",
+              "hex": "#4a6b8a",
+              "image": "uploads/p72-310688.webp"
+            },
+            {
+              "id": "061f4ef3",
+              "name": "عاجي",
+              "hex": "#f1ede4",
+              "image": "uploads/p73-6f1e04.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "272d64a3",
+              "label": "التصميم",
+              "value": "ميدالية شمسية — ماندالا"
+            },
+            {
+              "id": "57cceea7",
+              "label": "الألوان",
+              "value": "6 ألوان"
+            },
+            {
+              "id": "9210b33a",
+              "label": "الاستخدام",
+              "value": "المجالس والصالات"
+            }
+          ],
+          "available": true,
+          "featured": true
+        },
+        {
+          "id": "e368a727",
+          "name": "سجادة دائرية كلاسيك",
+          "images": [
+            {
+              "src": "uploads/p51-300aff.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p49-755ace.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p50-c0b83c.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "سجاد دائري بزخارف كلاسيكية، مثالي تحت طاولات الطعام والوسط وفي المداخل وغرف النوم. تشكيلة متنوعة من الألوان والنقوش.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [
+            {
+              "id": "d0d554bc",
+              "name": "بيج ورمادي",
+              "hex": "#b9b2a2",
+              "image": "uploads/p51-300aff.webp"
+            },
+            {
+              "id": "e89fc4e9",
+              "name": "أزرق",
+              "hex": "#5a7391",
+              "image": "uploads/p49-755ace.webp"
+            },
+            {
+              "id": "694724cd",
+              "name": "عنابي",
+              "hex": "#7d2230",
+              "image": "uploads/p50-c0b83c.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "7166704c",
+              "label": "الشكل",
+              "value": "دائري"
+            },
+            {
+              "id": "f3030a4b",
+              "label": "التصميم",
+              "value": "كلاسيك"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "15d13fd7",
+          "name": "سجادة كلاسيك بميدالية مركزية",
+          "images": [
+            {
+              "src": "uploads/p14-57261d.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p15-68c45e.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "سجادة كلاسيكية بإطار مزخرف وميدالية مركزية أنيقة على أرضية سادة، تناسب المجالس وغرف الطعام.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [
+            {
+              "id": "c3effbb2",
+              "name": "عنابي",
+              "hex": "#5e1a22",
+              "image": "uploads/p14-57261d.webp"
+            },
+            {
+              "id": "13b1ec4b",
+              "name": "كحلي",
+              "hex": "#1c2742",
+              "image": "uploads/p15-68c45e.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "ce67a6fd",
+              "label": "التصميم",
+              "value": "كلاسيك — ميدالية مركزية"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "eb32b265",
+          "name": "سجادة مودرن بنقش زهور تجريدي",
+          "images": [
+            {
+              "src": "uploads/p16-61b30e.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p10-aa13c4.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "سجادة عصرية بنقش زهور تجريدي بدرجات الرمادي والبيج، تضيف لمسة فنية هادئة للصالات وغرف الجلوس الحديثة.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "e811e388",
+              "label": "التصميم",
+              "value": "مودرن — تجريدي"
+            },
+            {
+              "id": "746841ff",
+              "label": "الألوان",
+              "value": "رمادي وبيج"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "7be6cd92",
+          "name": "سجادة كلاسيك رمادي فاتح",
+          "images": [
+            {
+              "src": "uploads/p11-28704b.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p12-8a5268.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "سجادة بطابع كلاسيكي هادئ بدرجات الرمادي الفاتح ونقوش ناعمة، تنسجم مع الديكورات العصرية والكلاسيكية.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "495355aa",
+              "label": "التصميم",
+              "value": "كلاسيك هادئ"
+            },
+            {
+              "id": "926f63ff",
+              "label": "اللون",
+              "value": "رمادي فاتح"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "25d13654",
+          "name": "سجادة فرنسية بيج ونقوش عنابية",
+          "images": [
+            {
+              "src": "uploads/p08-a98eac.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "سجادة بتصميم فرنسي راقٍ: أرضية فاتحة ونقوش عنابية منحنية وميدالية وسطية، مثالية للمجالس والصالات الفخمة.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "48e544c9",
+              "label": "التصميم",
+              "value": "فرنسي كلاسيك"
+            },
+            {
+              "id": "58d6d471",
+              "label": "الألوان",
+              "value": "بيج وعنابي"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "c2d0938e",
+          "name": "سجادة كلاسيك كحلي بميدالية",
+          "images": [
+            {
+              "src": "uploads/p09-93d9b0.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "سجادة كلاسيكية بأرضية كحلية داكنة وميدالية مزخرفة بدرجات البيج، تمنح المكان فخامة ودفئاً.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "20b1f9b9",
+              "label": "التصميم",
+              "value": "كلاسيك"
+            },
+            {
+              "id": "03432123",
+              "label": "الألوان",
+              "value": "كحلي وبيج"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "01c9d20d",
+          "name": "سجادة كلاسيك كحلي وذهبي",
+          "images": [
+            {
+              "src": "uploads/p34-0a1bbc.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p29-48bca4.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p33-0d4f8b.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "سجادة كبيرة بزخارف كلاسيكية بدرجات الكحلي والذهبي والبيج، مناسبة للمجالس الواسعة وصالات الاستقبال.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "d8dfa36e",
+              "label": "التصميم",
+              "value": "كلاسيك"
+            },
+            {
+              "id": "084117a7",
+              "label": "الألوان",
+              "value": "كحلي، ذهبي، بيج"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "4dbda667",
+          "name": "سجادة نقش الحدائق",
+          "images": [
+            {
+              "src": "uploads/p35-a274f7.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "سجادة بتصميم «الحدائق» التراثي المقسّم إلى مربعات مزخرفة بألوان متعددة، قطعة مميزة تضيف طابعاً تراثياً أصيلاً.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "763f458a",
+              "label": "التصميم",
+              "value": "تراثي — نقش الحدائق"
+            },
+            {
+              "id": "27f3cef7",
+              "label": "الألوان",
+              "value": "متعدد الألوان"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "8ea507a6",
+          "name": "دواسات مداخل وسجاد ممرات",
+          "images": [
+            {
+              "src": "uploads/p30-be7044.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "تشكيلة من دواسات المداخل وسجاد الممرات بتصاميم هندسية بسيطة، عملية وسهلة التنظيف للمداخل والمطابخ والممرات.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "c14a9aac",
+              "label": "الاستخدام",
+              "value": "المداخل، الممرات، المطابخ"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "8d14dd65",
+          "name": "سجادة بإطار كلاسيكي",
+          "images": [
+            {
+              "src": "uploads/rugf02-61b5e4.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/rugf03-2a30c1.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/rugf04-0b49dc.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "سجادة بأرضية سادة ناعمة وإطار مزخرف بطابع كلاسيكي، تناسب الديكورات الهادئة وتمنح المكان اتساعاً وفخامة.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والسعر.",
+          "colors": [
+            {
+              "id": "3c0fac7d",
+              "name": "بيج",
+              "hex": "#cdb894",
+              "image": "uploads/rugf02-61b5e4.webp"
+            },
+            {
+              "id": "2f6bc905",
+              "name": "رمادي فاتح",
+              "hex": "#c9c9c4",
+              "image": "uploads/rugf03-2a30c1.webp"
+            },
+            {
+              "id": "ee5eab58",
+              "name": "بني",
+              "hex": "#7b6047",
+              "image": "uploads/rugf04-0b49dc.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "336d0931",
+              "label": "التصميم",
+              "value": "كلاسيك — إطار مزخرف"
+            },
+            {
+              "id": "e3671c0f",
+              "label": "الألوان",
+              "value": "3 ألوان"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "fd6621f2",
+          "name": "سجادة داماسك كلاسيك",
+          "images": [
+            {
+              "src": "uploads/rugf01-73992a.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "سجادة بنقشة داماسك متكررة بدرجات الفضي والرمادي مع إطار مزخرف، لمسة كلاسيكية فخمة للمجالس.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والسعر.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "7f9e158d",
+              "label": "التصميم",
+              "value": "داماسك كلاسيك"
+            },
+            {
+              "id": "cf10ea67",
+              "label": "اللون",
+              "value": "رمادي فضي"
+            }
+          ],
+          "available": true,
+          "featured": false
+        }
+      ],
+      "branchDept": "السجاد"
+    },
+    {
+      "id": "c2",
+      "title": "الموكيت",
+      "description": "موكيت بالمتر بنقشات وألوان متعددة، يُفصّل ويُركّب حسب مقاس المكان للمنازل والمكاتب والمجالس.",
+      "cover": "",
+      "images": [],
+      "products": [
+        {
+          "id": "b17a5d0e",
+          "name": "موكيت مودرن بنقشات متعددة",
+          "images": [
+            {
+              "src": "uploads/p62-b97d6e.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p61-84ae93.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p63-87f6bc.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p67-acc3ca.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p68-5f8c21.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "تشكيلة واسعة من الموكيت العصري بنقشات هندسية ورخامية وزخرفية، يُفصّل ويُركّب حسب مقاس الغرفة للمنازل والمكاتب والمجالس.\n\nتواصل معنا للمعاينة والتفصيل والتركيب.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "caa0561b",
+              "label": "البيع",
+              "value": "بالمتر — حسب مقاس المكان"
+            },
+            {
+              "id": "9ac720df",
+              "label": "الاستخدام",
+              "value": "المنازل، المكاتب، المجالس"
+            }
+          ],
+          "available": true,
+          "featured": true
+        },
+        {
+          "id": "c9783e60",
+          "name": "موكيت سادة ناعم",
+          "images": [
+            {
+              "src": "uploads/p64-e0aa54.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p60-3bdde1.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "موكيت سادة بملمس ناعم ووبرة كثيفة بألوان هادئة، يمنح غرف النوم والمجالس دفئاً وراحة.\n\nتواصل معنا للمعاينة والتفصيل والتركيب.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "9d13047c",
+              "label": "النوع",
+              "value": "سادة — وبرة ناعمة"
+            },
+            {
+              "id": "414bccec",
+              "label": "البيع",
+              "value": "بالمتر — حسب مقاس المكان"
+            }
+          ],
+          "available": true,
+          "featured": false
+        }
+      ],
+      "branchDept": "السجاد"
+    },
+    {
+      "id": "c3",
+      "title": "الأثاث",
+      "description": "كراسي بار، طاولات بلازما، جزامات، طاولات طعام ووسط بتصاميم عصرية وكلاسيكية وخامات فاخرة.",
+      "cover": "",
+      "images": [],
+      "products": [
+        {
+          "id": "d0628b70",
+          "name": "طقم طاولات وسط ترافرتين",
+          "images": [
+            {
+              "src": "uploads/p43-5203c2.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p41-492b8b.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p44-6b1694.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p42-72d218.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "طقم طاولات وسط وجانبية بأسطح بلون الترافرتين الطبيعي وأرجل خشبية منحنية بلون بني، تصميم عصري يناسب المجالس والصالات.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "6947657c",
+              "label": "السطح",
+              "value": "بلون الترافرتين"
+            },
+            {
+              "id": "0399dfcb",
+              "label": "الأرجل",
+              "value": "خشب بني منحني"
+            },
+            {
+              "id": "3d91ce09",
+              "label": "الطقم",
+              "value": "طاولة وسط + طاولات جانبية"
+            }
+          ],
+          "available": true,
+          "featured": true
+        },
+        {
+          "id": "0509dff2",
+          "name": "طاولة طعام دائرية رخامية مع 4 كراسي",
+          "images": [
+            {
+              "src": "uploads/p18-80ffa4.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "طاولة طعام دائرية بسطح رخامي فاتح مع أربعة كراسي مخملية مريحة، مثالية للعائلات الصغيرة ومساحات الطعام العصرية.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "84a8c987",
+              "label": "السطح",
+              "value": "رخامي"
+            },
+            {
+              "id": "6c85f864",
+              "label": "الكراسي",
+              "value": "4 كراسي مخمل"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "ceef776a",
+          "name": "طاولة طعام مستطيلة بسطح ذهبي",
+          "images": [
+            {
+              "src": "uploads/p19-020dd3.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "طاولة طعام مستطيلة بسطح لامع بتعريقات ذهبية مع كراسي أنيقة، قطعة لافتة لغرف الطعام.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "3c4b2b0e",
+              "label": "الشكل",
+              "value": "مستطيل"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "ac0a17f0",
+          "name": "طقم طاولات وسط فضية بسطح زجاجي",
+          "images": [
+            {
+              "src": "uploads/p20-98a892.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "طقم طاولات وسط وجانبية بإطار فضي شامبين وأرجل كلاسيكية وسطح زجاجي، يجمع بين الأناقة والعملية.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "55e9f3e9",
+              "label": "اللون",
+              "value": "فضي شامبين"
+            },
+            {
+              "id": "900947ab",
+              "label": "السطح",
+              "value": "زجاج"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "40ceec1b",
+          "name": "طقم طاولات وسط زجاج أسود",
+          "images": [
+            {
+              "src": "uploads/p21-4f5d4e.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p25-35ab0e.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p37-98f430.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p38-d11ccc.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "طقم طاولات وسط بأسطح زجاج أسود لامع وقواعد فاتحة، تصميم عصري فخم للمجالس الحديثة.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "d8bd9cd3",
+              "label": "السطح",
+              "value": "زجاج أسود"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "4d0b5a21",
+          "name": "طاولات جانبية رخامية بيضاوية",
+          "images": [
+            {
+              "src": "uploads/p22-8ea467.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "طاولات جانبية بأسطح بيضاوية بلون الرخام الأبيض وقواعد خشبية، مناسبة بجانب الكنب وفي زوايا المجلس.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "5152db56",
+              "label": "السطح",
+              "value": "بلون الرخام الأبيض"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "8f242871",
+          "name": "طاولات خدمة خشبية بطبقات",
+          "images": [
+            {
+              "src": "uploads/p36-11fa5d.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p27-57652f.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "طاولات خدمة جانبية بطبقتين أو ثلاث بأسطح زجاجية عاكسة وقواعد خشبية بنية، لتقديم الضيافة وتزيين الزوايا.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "bc037767",
+              "label": "الخامة",
+              "value": "خشب بني مع زجاج"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "bccb30d7",
+          "name": "طاولات خدمة ذهبية",
+          "images": [
+            {
+              "src": "uploads/p39-484117.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "طاولات خدمة بطبقات بلمسات ذهبية وأسطح زجاجية، تضيف بريقاً للمجالس الفخمة.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "695e1a66",
+              "label": "اللون",
+              "value": "ذهبي"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "da62a17c",
+          "name": "طقم طاولات وسط خشبية",
+          "images": [
+            {
+              "src": "uploads/p28-5bdad4.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p40-0a20d5.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "طاولات وسط وجانبية بخشب بني دافئ وتصاميم عملية، تناسب المجالس وغرف المعيشة.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "b4391237",
+              "label": "الخامة",
+              "value": "خشب بني"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "dac30b1c",
+          "name": "وحدة تلفزيون خشبية",
+          "images": [
+            {
+              "src": "uploads/p01-4bc8e2.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "وحدات تلفزيون وأرفف خشبية بتصاميم عصرية ونقوش مميزة، مع أدراج ومساحات تخزين مفتوحة.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "cb714a2f",
+              "label": "الخامة",
+              "value": "خشب"
+            },
+            {
+              "id": "561ea71e",
+              "label": "المزايا",
+              "value": "أدراج وأرفف مفتوحة"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "2f1b2c2c",
+          "name": "كرسي بار دائري بعجلات",
+          "images": [
+            {
+              "src": "uploads/barc01-cc6138.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/barc05-33d4a8.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "كرسي بار دائري بمقعد مريح وقاعدة كروم قوية مع عجلات، يدور 360 درجة ويرتفع وينخفض بسهولة. مناسب للمكاتب والمطابخ والعيادات والمنازل.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "4b9b5540",
+              "name": "أسود",
+              "hex": "#1d1d1d",
+              "image": "uploads/barc01-cc6138.webp"
+            },
+            {
+              "id": "4b75f994",
+              "name": "بني",
+              "hex": "#7a4a2c",
+              "image": "uploads/barc05-33d4a8.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "643e3d49",
+              "label": "الارتفاع الكلي",
+              "value": "60 – 82 سم"
+            },
+            {
+              "id": "d8a1b474",
+              "label": "العرض",
+              "value": "42 سم"
+            },
+            {
+              "id": "f338c258",
+              "label": "الدوران",
+              "value": "360°"
+            },
+            {
+              "id": "a0d85a3c",
+              "label": "القاعدة",
+              "value": "كروم مع عجلات"
+            }
+          ],
+          "available": true,
+          "featured": true
+        },
+        {
+          "id": "9d78282a",
+          "name": "كرسي بار بظهر مربعات",
+          "images": [
+            {
+              "src": "uploads/barc03-9710e3.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/barc08-1e20cc.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "كرسي بار بظهر مبطن بتقسيمات مربعة أنيقة وقاعدة كروم دائرية، بارتفاع قابل للتعديل ودوران كامل.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "d350a6af",
+              "name": "بني",
+              "hex": "#7a4a2c",
+              "image": "uploads/barc03-9710e3.webp"
+            },
+            {
+              "id": "a065a5dd",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "image": "uploads/barc08-1e20cc.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "9bfb76f8",
+              "label": "الارتفاع",
+              "value": "60 – 82 سم"
+            },
+            {
+              "id": "4e7eb355",
+              "label": "المقاس",
+              "value": "40 × 45 × 90 سم"
+            },
+            {
+              "id": "f11b9bb5",
+              "label": "الدوران",
+              "value": "360°"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "586a52ac",
+          "name": "كرسي بار بمساند",
+          "images": [
+            {
+              "src": "uploads/barc07-5feff7.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "كرسي بار بمقعد دائري وظهر منحني متصل بمساند جانبية من الكروم، يجمع بين الراحة والأناقة.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "fe8bc8e1",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "image": "uploads/barc07-5feff7.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "bffdc9ad",
+              "label": "المقاس",
+              "value": "40 × 45 × 90 سم"
+            },
+            {
+              "id": "be0c3cc0",
+              "label": "اللون",
+              "value": "رمادي"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "1dfba48d",
+          "name": "كرسي بار بتنجيد ماسي",
+          "images": [
+            {
+              "src": "uploads/barc11-99b7b5.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/barc18-7fe88a.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/barc21-71b9df.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/barc22-2d4910.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "كرسي بار عصري بتنجيد ماسي فاخر وقاعدة سوداء مستديرة، بارتفاع قابل للتعديل ومسند للقدمين.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "3c7ac8e0",
+              "name": "أسود",
+              "hex": "#1d1d1d",
+              "image": "uploads/barc11-99b7b5.webp"
+            },
+            {
+              "id": "14c125ae",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "image": "uploads/barc18-7fe88a.webp"
+            },
+            {
+              "id": "9ae1cc47",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "image": "uploads/barc21-71b9df.webp"
+            },
+            {
+              "id": "f082988d",
+              "name": "بني",
+              "hex": "#7a4a2c",
+              "image": "uploads/barc22-2d4910.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "16d7a875",
+              "label": "الارتفاع الكلي",
+              "value": "90 – 112 سم"
+            },
+            {
+              "id": "d7305cf5",
+              "label": "ارتفاع المقعد",
+              "value": "60 – 82 سم"
+            },
+            {
+              "id": "fa69469b",
+              "label": "العرض",
+              "value": "42 سم"
+            }
+          ],
+          "available": true,
+          "featured": true
+        },
+        {
+          "id": "8eb1ed21",
+          "name": "كرسي بار بمقعد دائري مرتفع",
+          "images": [
+            {
+              "src": "uploads/barc12-ce4386.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/barc17-920da9.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/barc19-58ebae.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "كرسي بار بمقعد دائري مبطن وقاعدة كروم لامعة مع مسند للقدمين، مناسب للكاونترات والمطابخ.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "0493446c",
+              "name": "أسود",
+              "hex": "#1d1d1d",
+              "image": "uploads/barc12-ce4386.webp"
+            },
+            {
+              "id": "07d71caf",
+              "name": "بني",
+              "hex": "#7a4a2c",
+              "image": "uploads/barc17-920da9.webp"
+            },
+            {
+              "id": "d19c93f4",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "image": "uploads/barc19-58ebae.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "6bf924ae",
+              "label": "الارتفاع",
+              "value": "90 – 112 سم"
+            },
+            {
+              "id": "90a532bd",
+              "label": "العرض × العمق",
+              "value": "46 × 46 سم"
+            },
+            {
+              "id": "d40552b7",
+              "label": "قطر المقعد",
+              "value": "34 سم"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "383363ac",
+          "name": "كرسي بار بتصميم منحني",
+          "images": [
+            {
+              "src": "uploads/barc14-a09a43.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/barc16-d050ff.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/barc20-8e60e2.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "كرسي بار بتصميم منحني مريح بخياطة بارزة وقاعدة كروم، يمنح الكاونتر لمسة عصرية.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "d015c157",
+              "name": "بني",
+              "hex": "#7a4a2c",
+              "image": "uploads/barc14-a09a43.webp"
+            },
+            {
+              "id": "e7269c48",
+              "name": "أسود",
+              "hex": "#1d1d1d",
+              "image": "uploads/barc16-d050ff.webp"
+            },
+            {
+              "id": "1f82195e",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "image": "uploads/barc20-8e60e2.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "ff14013d",
+              "label": "الارتفاع",
+              "value": "90 – 112 سم"
+            },
+            {
+              "id": "c3ea199f",
+              "label": "العرض",
+              "value": "46 سم"
+            },
+            {
+              "id": "17fa527b",
+              "label": "العمق",
+              "value": "45 سم"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "5792ba38",
+          "name": "كرسي بار بظهر وعجلات",
+          "images": [
+            {
+              "src": "uploads/barc23-70fd17.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/barc24-85b365.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/barc25-774bb3.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "كرسي عملي بمقعد مريح وظهر مبطن وقاعدة خماسية بعجلات، مناسب للعيادات والصالونات والمكاتب.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "9face1b1",
+              "name": "أسود",
+              "hex": "#1d1d1d",
+              "image": "uploads/barc23-70fd17.webp"
+            },
+            {
+              "id": "c29f56ef",
+              "name": "بني",
+              "hex": "#7a4a2c",
+              "image": "uploads/barc24-85b365.webp"
+            },
+            {
+              "id": "e4e1f06e",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "image": "uploads/barc25-774bb3.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "a0a33099",
+          "name": "كرسي بار بمقعد صدفي",
+          "images": [
+            {
+              "src": "uploads/barc26-2b4851.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/barc27-e81718.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/barc28-c1827a.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "كرسي بار بمقعد صدفي عصري مع وسادة جلد وقاعدة كروم مستديرة ومسند للقدمين.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "16c2a7f2",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "image": "uploads/barc26-2b4851.webp"
+            },
+            {
+              "id": "c571c72e",
+              "name": "أبيض",
+              "hex": "#f2f2f2",
+              "image": "uploads/barc27-e81718.webp"
+            },
+            {
+              "id": "73623e2d",
+              "name": "أسود",
+              "hex": "#1d1d1d",
+              "image": "uploads/barc28-c1827a.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "cc93a74e",
+          "name": "كرسي بار بقاعدة سوداء",
+          "images": [
+            {
+              "src": "uploads/barc29-53d99d.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/barc32-e28821.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "كرسي بار بظهر منخفض مريح وقاعدة سوداء مطفية مع مسند للقدمين، تصميم بسيط وأنيق.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "e5d74b51",
+              "name": "أسود",
+              "hex": "#1d1d1d",
+              "image": "uploads/barc29-53d99d.webp"
+            },
+            {
+              "id": "25cba249",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "image": "uploads/barc32-e28821.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "5d183f06",
+          "name": "كرسي بار بظهر منخفض",
+          "images": [
+            {
+              "src": "uploads/barc31-75872d.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/barc30-19934c.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "كرسي بار بمقعد عميق وظهر منخفض وقاعدة كروم لامعة مع مسند للقدمين.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "418bd2fe",
+              "name": "بني",
+              "hex": "#7a4a2c",
+              "image": "uploads/barc31-75872d.webp"
+            },
+            {
+              "id": "24673e13",
+              "name": "أبيض",
+              "hex": "#f2f2f2",
+              "image": "uploads/barc30-19934c.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "81b2b68a",
+          "name": "كرسي بار مودرن",
+          "images": [
+            {
+              "src": "uploads/barc33-f2636c.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "كرسي بار بمقعد مسطح عصري وهيكل كروم مع مسند قدم متصل، مناسب للمطابخ والكاونترات الحديثة.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "aae02b99",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "image": "uploads/barc33-f2636c.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "e66e92ca",
+              "label": "اللون",
+              "value": "رمادي"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "1c5799db",
+          "name": "كرسي بار بمسند قدم",
+          "images": [
+            {
+              "src": "uploads/barc34-6a776b.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/barc35-52f9da.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "كرسي بار بمقعد مسطح مبطن وهيكل كروم متين مع مسند قدم مدمج وارتفاع قابل للتعديل.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "b6c87e4b",
+              "name": "أسود",
+              "hex": "#1d1d1d",
+              "image": "uploads/barc34-6a776b.webp"
+            },
+            {
+              "id": "cb662904",
+              "name": "أبيض",
+              "hex": "#f2f2f2",
+              "image": "uploads/barc35-52f9da.webp"
+            }
+          ],
+          "sizes": "",
+          "specs": [],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "984a6a0e",
+          "name": "طاولة بلازما 200 سم",
+          "images": [
+            {
+              "src": "uploads/tvc06-728135.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/tvc07-c5681f.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "طاولة بلازما (وحدة تلفزيون) بتصميم عصري، مع أدراج وأرفف مفتوحة لتنظيم الأجهزة والإكسسوارات، وأرجل مائلة أنيقة.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "5193a58d",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "image": "uploads/tvc06-728135.webp"
+            },
+            {
+              "id": "8f0fd331",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "image": "uploads/tvc07-c5681f.webp"
+            }
+          ],
+          "sizes": "200 × 43 × 40",
+          "specs": [
+            {
+              "id": "b8de7477",
+              "label": "المقاس",
+              "value": "200 × 43 × 40 سم"
+            }
+          ],
+          "available": true,
+          "featured": true
+        },
+        {
+          "id": "0d4c993a",
+          "name": "طاولة بلازما 180 سم",
+          "images": [
+            {
+              "src": "uploads/tvc09-a0a3e4.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/tvc10-27ccde.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "طاولة بلازما (وحدة تلفزيون) بتصميم عصري، مع أدراج وأرفف مفتوحة لتنظيم الأجهزة والإكسسوارات، وأرجل مائلة أنيقة.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "f8c38425",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "image": "uploads/tvc09-a0a3e4.webp"
+            },
+            {
+              "id": "bd99f7aa",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "image": "uploads/tvc10-27ccde.webp"
+            }
+          ],
+          "sizes": "180 × 43 × 40",
+          "specs": [
+            {
+              "id": "fdc38a9f",
+              "label": "المقاس",
+              "value": "180 × 43 × 40 سم"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "6a7ceff4",
+          "name": "طاولة بلازما 160 سم",
+          "images": [
+            {
+              "src": "uploads/tvc11-232081.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/tvc08-50e32a.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "طاولة بلازما (وحدة تلفزيون) بتصميم عصري، مع أدراج وأرفف مفتوحة لتنظيم الأجهزة والإكسسوارات، وأرجل مائلة أنيقة.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "55d1bb3f",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "image": "uploads/tvc11-232081.webp"
+            },
+            {
+              "id": "bf7cbb87",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "image": "uploads/tvc08-50e32a.webp"
+            }
+          ],
+          "sizes": "160 × 43 × 40",
+          "specs": [
+            {
+              "id": "f77b5da3",
+              "label": "المقاس",
+              "value": "160 × 43 × 40 سم"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "a4c3d5fa",
+          "name": "طاولة بلازما بشرائح خشبية",
+          "images": [
+            {
+              "src": "uploads/tvc01-7eadc4.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/tvc02-fbc91f.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/tvc04-28ee3f.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "طاولة بلازما بأبواب بشرائح خشبية عمودية ودرج وسطي، بلمسة اسكندنافية دافئة.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "6826c820",
+              "name": "سنديان فاتح",
+              "hex": "#cdbb9b",
+              "image": "uploads/tvc01-7eadc4.webp"
+            },
+            {
+              "id": "b93e3585",
+              "name": "خشبي طبيعي",
+              "hex": "#b08a5a",
+              "image": "uploads/tvc02-fbc91f.webp"
+            },
+            {
+              "id": "b74e960d",
+              "name": "رمادي",
+              "hex": "#8d8d8d",
+              "image": "uploads/tvc04-28ee3f.webp"
+            }
+          ],
+          "sizes": "180 × 40 × 45",
+          "specs": [
+            {
+              "id": "dae2139b",
+              "label": "المقاس",
+              "value": "180 × 40 × 45 سم"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "82e70841",
+          "name": "طاولة بلازما كبيرة بشرائح خشبية",
+          "images": [
+            {
+              "src": "uploads/tvc03-f94800.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "طاولة بلازما بطول 200 سم بأبواب بشرائح خشبية ودرجين وسطيين، مناسبة للشاشات الكبيرة.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "21aacbe5",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "image": "uploads/tvc03-f94800.webp"
+            }
+          ],
+          "sizes": "200 × 40 × 45",
+          "specs": [
+            {
+              "id": "2cc2b4f0",
+              "label": "المقاس",
+              "value": "200 × 40 × 45 سم"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "e679f84d",
+          "name": "جزامة بتصميم شرائح",
+          "images": [
+            {
+              "src": "uploads/tvc12-8fbafc.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/tvc13-dbaa0d.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "دولاب جزامة بثلاثة أبواب وتصميم واجهة مميز، يوفر مساحة تخزين واسعة للأحذية ويضيف لمسة ديكور للمدخل.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "7692c98e",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "image": "uploads/tvc12-8fbafc.webp"
+            },
+            {
+              "id": "2dd37c73",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "image": "uploads/tvc13-dbaa0d.webp"
+            }
+          ],
+          "sizes": "120 × 90 × 30",
+          "specs": [
+            {
+              "id": "482c77b4",
+              "label": "المقاس",
+              "value": "120 × 90 × 30 سم"
+            },
+            {
+              "id": "05e84fa1",
+              "label": "الأبواب",
+              "value": "3 أبواب"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "f6252803",
+          "name": "جزامة بنقشة X",
+          "images": [
+            {
+              "src": "uploads/tvc17-ce1d2d.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/tvc14-33652c.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "دولاب جزامة بثلاثة أبواب وتصميم واجهة مميز، يوفر مساحة تخزين واسعة للأحذية ويضيف لمسة ديكور للمدخل.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "a7ead256",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "image": "uploads/tvc17-ce1d2d.webp"
+            },
+            {
+              "id": "57c9b4a7",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "image": "uploads/tvc14-33652c.webp"
+            }
+          ],
+          "sizes": "120 × 90 × 30",
+          "specs": [
+            {
+              "id": "d7a1bf83",
+              "label": "المقاس",
+              "value": "120 × 90 × 30 سم"
+            },
+            {
+              "id": "a843ccff",
+              "label": "الأبواب",
+              "value": "3 أبواب"
+            }
+          ],
+          "available": true,
+          "featured": true
+        },
+        {
+          "id": "6006181e",
+          "name": "جزامة بنقشة المعيّن",
+          "images": [
+            {
+              "src": "uploads/tvc15-7ce6e0.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/tvc16-529374.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "دولاب جزامة بثلاثة أبواب وتصميم واجهة مميز، يوفر مساحة تخزين واسعة للأحذية ويضيف لمسة ديكور للمدخل.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "b96d5469",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "image": "uploads/tvc15-7ce6e0.webp"
+            },
+            {
+              "id": "eb09e155",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "image": "uploads/tvc16-529374.webp"
+            }
+          ],
+          "sizes": "120 × 90 × 30",
+          "specs": [
+            {
+              "id": "c027e900",
+              "label": "المقاس",
+              "value": "120 × 90 × 30 سم"
+            },
+            {
+              "id": "4e9493f1",
+              "label": "الأبواب",
+              "value": "3 أبواب"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "a9cf263a",
+          "name": "جزامة بخطوط طولية",
+          "images": [
+            {
+              "src": "uploads/tvc18-9ba4fa.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/tvc21-1ae065.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "دولاب جزامة بثلاثة أبواب وتصميم واجهة مميز، يوفر مساحة تخزين واسعة للأحذية ويضيف لمسة ديكور للمدخل.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "05fb0e98",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "image": "uploads/tvc18-9ba4fa.webp"
+            },
+            {
+              "id": "8368ccf8",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "image": "uploads/tvc21-1ae065.webp"
+            }
+          ],
+          "sizes": "120 × 90 × 30",
+          "specs": [
+            {
+              "id": "e81d5b0a",
+              "label": "المقاس",
+              "value": "120 × 90 × 30 سم"
+            },
+            {
+              "id": "210c3d98",
+              "label": "الأبواب",
+              "value": "3 أبواب"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "09d7aba9",
+          "name": "جزامة بنقشة الأسهم",
+          "images": [
+            {
+              "src": "uploads/tvc19-f7afa6.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/tvc20-a3fded.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "دولاب جزامة بثلاثة أبواب وتصميم واجهة مميز، يوفر مساحة تخزين واسعة للأحذية ويضيف لمسة ديكور للمدخل.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "9f507857",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "image": "uploads/tvc19-f7afa6.webp"
+            },
+            {
+              "id": "b93d10f2",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "image": "uploads/tvc20-a3fded.webp"
+            }
+          ],
+          "sizes": "120 × 90 × 30",
+          "specs": [
+            {
+              "id": "9dd9e176",
+              "label": "المقاس",
+              "value": "120 × 90 × 30 سم"
+            },
+            {
+              "id": "4ff6cdf1",
+              "label": "الأبواب",
+              "value": "3 أبواب"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "f9f67e69",
+          "name": "جزامة بنقشة هندسية",
+          "images": [
+            {
+              "src": "uploads/tvc23-36aa16.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/tvc22-7b87f6.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "دولاب جزامة بثلاثة أبواب وتصميم واجهة مميز، يوفر مساحة تخزين واسعة للأحذية ويضيف لمسة ديكور للمدخل.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [
+            {
+              "id": "a54cd7fb",
+              "name": "بيج",
+              "hex": "#dccdb0",
+              "image": "uploads/tvc23-36aa16.webp"
+            },
+            {
+              "id": "2967759f",
+              "name": "بني داكن",
+              "hex": "#4a3226",
+              "image": "uploads/tvc22-7b87f6.webp"
+            }
+          ],
+          "sizes": "120 × 90 × 30",
+          "specs": [
+            {
+              "id": "5b5409dd",
+              "label": "المقاس",
+              "value": "120 × 90 × 30 سم"
+            },
+            {
+              "id": "645bf28d",
+              "label": "الأبواب",
+              "value": "3 أبواب"
+            }
+          ],
+          "available": true,
+          "featured": false
+        }
+      ],
+      "branchDept": "الأثاث"
+    },
+    {
+      "id": "c4",
+      "title": "الإنارة",
+      "description": "ثريات كريستال وLED وكلاسيكية تضيف لمسة فخامة لكل مساحة.",
+      "cover": "",
+      "images": [],
+      "products": [
+        {
+          "id": "060d8cfd",
+          "name": "ثريا حلقات LED عصرية",
+          "images": [
+            {
+              "src": "uploads/p02-2de9c1.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p03-f11ad1.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p06-a7fc63.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "ثريات عصرية بحلقات LED متداخلة بتصاميم دائرية وبيضاوية، إضاءة ناعمة وموزعة تناسب الصالات والمجالس ذات الأسقف العالية.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "d6ed868b",
+              "label": "النوع",
+              "value": "LED — حلقات"
+            },
+            {
+              "id": "1262f88f",
+              "label": "الطراز",
+              "value": "مودرن"
+            }
+          ],
+          "available": true,
+          "featured": true
+        },
+        {
+          "id": "ad91bf91",
+          "name": "ثريا كريستال ذهبية بطبقات",
+          "images": [
+            {
+              "src": "uploads/p04-23206c.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "ثريا فخمة بطبقات من الكريستال المتدلي وإطار ذهبي مربع، قطعة رئيسية للمجالس الكبيرة ومداخل القصور.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "d6fb4bae",
+              "label": "الخامة",
+              "value": "كريستال وإطار ذهبي"
+            },
+            {
+              "id": "81e11fba",
+              "label": "الطراز",
+              "value": "فخم"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "a907f634",
+          "name": "ثريا حلقتين كريستال ذهبي",
+          "images": [
+            {
+              "src": "uploads/p47-951a5f.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p46-9a733e.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p05-523b9b.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "ثريا بحلقتين متداخلتين مرصعة بالكريستال بإضاءة ذهبية دافئة، تجمع بين الفخامة والتصميم العصري.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "141d366a",
+              "label": "الخامة",
+              "value": "كريستال"
+            },
+            {
+              "id": "bdb0d68c",
+              "label": "الإضاءة",
+              "value": "ذهبية دافئة"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "09eaee4e",
+          "name": "ثريا شلال حلقات كريستال",
+          "images": [
+            {
+              "src": "uploads/p24-de26f1.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p23-9ddaf4.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "ثريا طويلة على شكل شلال من الحلقات الكريستالية المتتالية مع كرات كريستال، مثالية لبيوت الدرج والأسقف المرتفعة.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "ef0296e8",
+              "label": "الخامة",
+              "value": "كريستال"
+            },
+            {
+              "id": "71027540",
+              "label": "مناسبة لـ",
+              "value": "بيت الدرج والأسقف العالية"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "065c75c3",
+          "name": "ثريا مربعة كريستال",
+          "images": [
+            {
+              "src": "uploads/p48-26031a.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p45-ccea36.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "ثريا بإطارات مربعة مرصعة بالكريستال وفانوس كريستالي في الوسط، تصميم مميز يناسب المجالس وغرف الطعام.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "924b8292",
+              "label": "الخامة",
+              "value": "كريستال"
+            },
+            {
+              "id": "98d7e847",
+              "label": "الشكل",
+              "value": "مربع"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "b5540545",
+          "name": "ثريا حلقات ذهبية متداخلة",
+          "images": [
+            {
+              "src": "uploads/p26-daf269.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "ثريا بحلقات متداخلة مكسوة بالكريستال الذهبي، تعكس الضوء بشكل ساحر وتضيف لمسة فخامة للمكان.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "0f7322ae",
+              "label": "الخامة",
+              "value": "كريستال ذهبي"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "d633b1d7",
+          "name": "ثريا كلاسيكية بأغطية قماش",
+          "images": [
+            {
+              "src": "uploads/p13-39a857.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/p17-25682d.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "ثريا بطراز كلاسيكي بأذرع متعددة وأغطية قماشية بيضاء، إضاءة هادئة ودافئة للمجالس وغرف الطعام.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "505884d9",
+              "label": "الطراز",
+              "value": "كلاسيك"
+            },
+            {
+              "id": "777c64e5",
+              "label": "الأغطية",
+              "value": "قماش أبيض"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "1cb1d81d",
+          "name": "ثريا عناقيد بأوراق ذهبية",
+          "images": [
+            {
+              "src": "uploads/p07-5bfd2d.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "ثريا سقفية بعناقيد إضاءة متدلية وأوراق ذهبية، قطعة فنية مميزة للصالات والمداخل الواسعة.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "c31b1bc9",
+              "label": "الطراز",
+              "value": "فني — عناقيد"
+            }
+          ],
+          "available": true,
+          "featured": false
+        }
+      ],
+      "branchDept": "الإنارة، الأثاث"
+    },
+    {
+      "id": "c5",
+      "title": "المفروشات",
+      "description": "مراتب ومفروشات ولوحات جدارية ومكملات ديكور لغرف النوم والمداخل والمجالس.",
+      "cover": "",
+      "images": [],
+      "products": [
+        {
+          "id": "98e4b9e8",
+          "name": "مراتب الضبيبي",
+          "images": [
+            {
+              "src": "uploads/p32-118e5b.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "مراتب الضبيبي بأحجام مختلفة للأفراد والعوائل، مع تشكيلة من أسرّة ومفارش غرف النوم.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "63629412",
+              "label": "الأحجام",
+              "value": "فردي ومزدوج"
+            }
+          ],
+          "available": true,
+          "featured": true
+        },
+        {
+          "id": "5158dd44",
+          "name": "نباتات صناعية للديكور",
+          "images": [
+            {
+              "src": "uploads/p31-9a19df.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "تشكيلة من النباتات الصناعية بأحجام متعددة مع أصصها، تضيف الحياة والانتعاش للمداخل والمجالس والمكاتب بدون عناية.\n\nتواصل معنا لمعرفة المقاسات المتوفرة والأسعار.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "d5f5bb83",
+              "label": "الاستخدام",
+              "value": "المداخل، المجالس، المكاتب"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "d32628d8",
+          "name": "لوحة جدارية بعلاقات — جبال الضباب",
+          "images": [
+            {
+              "src": "uploads/wall01-0aa06d.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/wallp04-91ff1f.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "لوحة جدارية فنية مطبوعة بجودة عالية مع علاقات معدنية أنيقة، تجمع بين الديكور والاستخدام العملي لتعليق الملابس والشنط في المداخل وغرف النوم.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "5faa4c24",
+              "label": "التصميم",
+              "value": "جبال الضباب"
+            },
+            {
+              "id": "c9a5e1e2",
+              "label": "الاستخدام",
+              "value": "المداخل، غرف النوم، الممرات"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "088a7c8f",
+          "name": "لوحة جدارية بعلاقات — الصخرة الذهبية",
+          "images": [
+            {
+              "src": "uploads/wall15-332ef9.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/wallp02-3ad36a.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "لوحة جدارية فنية مطبوعة بجودة عالية مع علاقات معدنية أنيقة، تجمع بين الديكور والاستخدام العملي لتعليق الملابس والشنط في المداخل وغرف النوم.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "41011ee5",
+              "label": "التصميم",
+              "value": "الصخرة الذهبية"
+            },
+            {
+              "id": "9f655809",
+              "label": "الاستخدام",
+              "value": "المداخل، غرف النوم، الممرات"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "2c069529",
+          "name": "لوحة جدارية بعلاقات — الورود الوردية",
+          "images": [
+            {
+              "src": "uploads/wall06-b6e0f6.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/wallp09-e386b4.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/wallp03-af72c2.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "لوحة جدارية فنية مطبوعة بجودة عالية مع علاقات معدنية أنيقة، تجمع بين الديكور والاستخدام العملي لتعليق الملابس والشنط في المداخل وغرف النوم.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "9291f80c",
+              "label": "التصميم",
+              "value": "الورود الوردية"
+            },
+            {
+              "id": "cf67567f",
+              "label": "الاستخدام",
+              "value": "المداخل، غرف النوم، الممرات"
+            }
+          ],
+          "available": true,
+          "featured": true
+        },
+        {
+          "id": "ac8dac55",
+          "name": "لوحة جدارية بعلاقات — الزهور البيضاء",
+          "images": [
+            {
+              "src": "uploads/wall07-77b23b.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/wall10-421803.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "لوحة جدارية فنية مطبوعة بجودة عالية مع علاقات معدنية أنيقة، تجمع بين الديكور والاستخدام العملي لتعليق الملابس والشنط في المداخل وغرف النوم.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "0285966e",
+              "label": "التصميم",
+              "value": "الزهور البيضاء"
+            },
+            {
+              "id": "f59f4577",
+              "label": "الاستخدام",
+              "value": "المداخل، غرف النوم، الممرات"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "29252104",
+          "name": "لوحة جدارية بعلاقات — الزهرة الكبيرة",
+          "images": [
+            {
+              "src": "uploads/wall08-2242fe.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/wallp13-212191.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/wallp14-e16f0c.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "لوحة جدارية فنية مطبوعة بجودة عالية مع علاقات معدنية أنيقة، تجمع بين الديكور والاستخدام العملي لتعليق الملابس والشنط في المداخل وغرف النوم.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "b08e8296",
+              "label": "التصميم",
+              "value": "الزهرة الكبيرة"
+            },
+            {
+              "id": "99931540",
+              "label": "الاستخدام",
+              "value": "المداخل، غرف النوم، الممرات"
+            }
+          ],
+          "available": true,
+          "featured": false
+        },
+        {
+          "id": "6b1383fc",
+          "name": "لوحة جدارية بعلاقات — شجرة القمر",
+          "images": [
+            {
+              "src": "uploads/wall11-0d9f02.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/wall12-d20a2a.webp",
+              "caption": ""
+            },
+            {
+              "src": "uploads/wallp05-6697f1.webp",
+              "caption": ""
+            }
+          ],
+          "price": "",
+          "oldPrice": "",
+          "description": "لوحة جدارية فنية مطبوعة بجودة عالية مع علاقات معدنية أنيقة، تجمع بين الديكور والاستخدام العملي لتعليق الملابس والشنط في المداخل وغرف النوم.\n\nتواصل معنا لمعرفة السعر والتوفر في أقرب فرع.",
+          "colors": [],
+          "sizes": "",
+          "specs": [
+            {
+              "id": "9acecfcc",
+              "label": "التصميم",
+              "value": "شجرة القمر"
+            },
+            {
+              "id": "8879217b",
+              "label": "الاستخدام",
+              "value": "المداخل، غرف النوم، الممرات"
+            }
+          ],
+          "available": true,
+          "featured": false
+        }
+      ],
+      "branchDept": "المفروشات"
+    }
+  ],
+  "projects": [
+    {
+      "id": "852edb8a",
+      "title": "تركيب نجف فاخر",
+      "client": "من أعمالنا — الهبة الحجر",
+      "description": "تنفيذ وتركيب نجف كريستال بتصاميم الأمواج المتدرجة في المجالس والصالات، مع تنسيق الإضاءة المخفية في الأسقف.",
+      "images": [
+        {
+          "src": "uploads/proj-55f9f7e6.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/proj-119dfe0e.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/proj-e50a41f6.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/proj-478235a5.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/proj-0075c96f.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/proj-250b4afe.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/proj-068170a0.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/proj-77e6a103.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/proj-06167d5e.webp",
+          "caption": ""
+        },
+        {
+          "src": "uploads/proj-dacba4fb.webp",
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "clients": [
+    {
+      "id": "k1",
+      "name": "اسم العميل",
+      "logo": ""
+    }
+  ],
+  "branches": [
+    {
+      "id": "934038f0",
+      "name": "فرع السجاد",
+      "area": "أسواق العمرة",
+      "address": "أسواق العمرة — مكة المكرمة",
+      "city": "مكة المكرمة",
+      "departments": "السجاد",
+      "whatsapp": "0555064083",
+      "phone": "",
+      "numbers": "",
+      "hours": "",
+      "photo": "uploads/branch01-0f86c1.webp",
+      "mapUrl": "",
+      "coords": "21.4225, 39.8262",
+      "coordsApprox": true,
+      "shifts": ""
+    },
+    {
+      "id": "0c43bc81",
+      "name": "فرع الأثاث",
+      "area": "أسواق العمرة",
+      "address": "أسواق العمرة — مكة المكرمة",
+      "city": "مكة المكرمة",
+      "departments": "الأثاث",
+      "whatsapp": "0555091520",
+      "phone": "",
+      "numbers": "",
+      "hours": "",
+      "photo": "uploads/branch02-c41b46.webp",
+      "mapUrl": "",
+      "coords": "21.4225, 39.8262",
+      "coordsApprox": true,
+      "shifts": ""
+    },
+    {
+      "id": "3fe12cbe",
+      "name": "فرع المفروشات",
+      "area": "أسواق العمرة",
+      "address": "أسواق العمرة — مكة المكرمة",
+      "city": "مكة المكرمة",
+      "departments": "المفروشات",
+      "whatsapp": "0555073254",
+      "phone": "",
+      "numbers": "",
+      "hours": "",
+      "photo": "uploads/branch03-e31c1f.webp",
+      "mapUrl": "",
+      "coords": "21.4225, 39.8262",
+      "coordsApprox": true,
+      "shifts": ""
+    },
+    {
+      "id": "001b10bc",
+      "name": "فرع السجاد",
+      "area": "أسواق الدواس",
+      "address": "أسواق الدواس — مكة المكرمة",
+      "city": "مكة المكرمة",
+      "departments": "السجاد",
+      "whatsapp": "0555021883",
+      "phone": "",
+      "numbers": "",
+      "hours": "",
+      "photo": "uploads/branch04-264ff9.webp",
+      "mapUrl": "",
+      "coords": "21.4225, 39.8262",
+      "coordsApprox": true,
+      "shifts": ""
+    },
+    {
+      "id": "d152c00a",
+      "name": "فرع الأثاث",
+      "area": "أسواق الدواس",
+      "address": "أسواق الدواس — مكة المكرمة",
+      "city": "مكة المكرمة",
+      "departments": "الأثاث",
+      "whatsapp": "0555079685",
+      "phone": "",
+      "numbers": "",
+      "hours": "",
+      "photo": "uploads/branch05-1d0570.webp",
+      "mapUrl": "",
+      "coords": "21.4225, 39.8262",
+      "coordsApprox": true,
+      "shifts": ""
+    },
+    {
+      "id": "d7c80b77",
+      "name": "فرع المفروشات",
+      "area": "أسواق الدواس",
+      "address": "أسواق الدواس — مكة المكرمة",
+      "city": "مكة المكرمة",
+      "departments": "المفروشات",
+      "whatsapp": "0555039312",
+      "phone": "",
+      "numbers": "",
+      "hours": "",
+      "photo": "uploads/branch06-21f220.webp",
+      "mapUrl": "",
+      "coords": "21.4225, 39.8262",
+      "coordsApprox": true,
+      "shifts": ""
+    },
+    {
+      "id": "c47e8a68",
+      "name": "فرع الأثاث والإنارة",
+      "area": "مجمع حراء",
+      "address": "مجمع حراء — مكة المكرمة",
+      "city": "مكة المكرمة",
+      "departments": "الأثاث، الإنارة",
+      "whatsapp": "0555082719",
+      "phone": "",
+      "numbers": "",
+      "hours": "",
+      "photo": "uploads/branch07-d1120a.webp",
+      "mapUrl": "",
+      "coords": "21.4225, 39.8262",
+      "coordsApprox": true,
+      "shifts": ""
+    },
+    {
+      "id": "9fc1741b",
+      "name": "فرع المفروشات",
+      "area": "مجمع حراء",
+      "address": "مجمع حراء — مكة المكرمة",
+      "city": "مكة المكرمة",
+      "departments": "المفروشات",
+      "whatsapp": "0555075308",
+      "phone": "",
+      "numbers": "",
+      "hours": "",
+      "photo": "uploads/branch08-6a6a58.webp",
+      "mapUrl": "",
+      "coords": "21.4225, 39.8262",
+      "coordsApprox": true,
+      "shifts": ""
+    },
+    {
+      "id": "4dab4384",
+      "name": "فرع السجاد والأثاث",
+      "area": "ولي العهد",
+      "address": "ولي العهد — مكة المكرمة",
+      "city": "مكة المكرمة",
+      "departments": "السجاد، الأثاث، المفروشات",
+      "whatsapp": "0555944581",
+      "phone": "",
+      "numbers": "",
+      "hours": "",
+      "photo": "uploads/branch09-b3c8d6.webp",
+      "mapUrl": "",
+      "coords": "21.4225, 39.8262",
+      "coordsApprox": true,
+      "shifts": ""
+    },
+    {
+      "id": "d9d6a8c3",
+      "name": "فرع السجاد والأثاث",
+      "area": "الجموم",
+      "address": "الجموم — مكة المكرمة",
+      "city": "مكة المكرمة",
+      "departments": "السجاد، الأثاث",
+      "whatsapp": "0531176284",
+      "phone": "",
+      "numbers": "",
+      "hours": "",
+      "photo": "uploads/branch10-2c0aec.webp",
+      "mapUrl": "",
+      "coords": "21.6167, 39.699",
+      "coordsApprox": true,
+      "shifts": ""
+    },
+    {
+      "id": "342d9d6c",
+      "name": "فرع السجاد والأثاث",
+      "area": "الحمدانية",
+      "address": "الحمدانية — جدة",
+      "city": "جدة",
+      "departments": "السجاد، الأثاث، الإنارة",
+      "whatsapp": "0555944598",
+      "phone": "0555086532",
+      "numbers": "",
+      "hours": "",
+      "photo": "uploads/branch11-888ca7.webp",
+      "mapUrl": "",
+      "coords": "21.765, 39.2",
+      "coordsApprox": true,
+      "shifts": ""
+    }
+  ],
+  "contact": {
+    "phone": "055 504 3409",
+    "whatsapp": "0555944581",
+    "email": "",
+    "instagram": "dh_trd",
+    "tiktok": "dh_trd",
+    "snapchat": "dh-trd",
+    "youtube": "dh_trd",
+    "facebook": "dh_trd",
+    "pinterest": "dh_trd",
+    "x": ""
+  },
+  "sections": {
+    "about": true,
+    "categories": true,
+    "projects": true,
+    "clients": true,
+    "branches": true,
+    "contact": true,
+    "reels": true,
+    "reviews": true,
+    "installments": true
+  },
+  "theme": {
+    "gold": "#DBB83C",
+    "dark": "#111111"
+  },
+  "reels": [
+    {
+      "id": "29860a3f",
+      "video": "uploads/reel-8ce0b9c9.mp4",
+      "title": "تركيب نجف فاخر من أعمالنا",
+      "caption": "من أعمال شركة الضبيبي في تركيب النجف والإضاءة",
+      "poster": "uploads/reelp-52fc1a33.webp",
+      "link": "#projects"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "75bebb10",
+      "name": "عبدالرحمن",
+      "text": "شغله ماشاءالله في التركيب فن واحتراف، فرشلي المشمع طلع كأنه باركيه",
+      "stars": 5,
+      "branch": "فرع السجاد والأثاث — ولي العهد • مكة المكرمة"
+    },
+    {
+      "id": "70bfafa7",
+      "name": "أم مروان",
+      "text": "ماشاء الله لا قوة إلا بالله، شغلهم ممتاز والجودة عالية",
+      "stars": 5,
+      "branch": "فرع السجاد — أسواق الدواس • مكة المكرمة"
+    },
+    {
+      "id": "d4abefa3",
+      "name": "Awatf",
+      "text": "أخذت سجاد من فرع الجموم يفتح النفس",
+      "stars": 5,
+      "branch": "فرع السجاد والأثاث — الجموم • مكة المكرمة"
+    },
+    {
+      "id": "477bcdc6",
+      "name": "حكيم",
+      "text": "الأسعار جيدة جداً… مستوى عالي جداً من الأخلاق وحسن التعامل",
+      "stars": 5,
+      "branch": "فرع السجاد والأثاث — الحمدانية • جدة"
+    }
+  ],
+  "installments": {
+    "enabled": true,
+    "showOnProducts": true,
+    "tabby": true,
+    "tamara": true,
+    "title": "اشتري ولا تشيل هم الدفع",
+    "subtitle": "التقسيط متوفر عبر"
+  },
+  "hours": {
+    "s1": "09:00-11:30",
+    "s2": "16:00-23:30",
+    "days": "يومياً",
+    "show": true
+  }
+}
