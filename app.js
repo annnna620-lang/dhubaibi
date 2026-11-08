@@ -483,6 +483,7 @@ function renderProduct(c, p) {
       <div class="pd-gal">
         <div class="pd-main" id="pdMain"></div>
         <div class="pd-thumbs" id="pdThumbs"></div>
+        ${window.hasRugAR?.(p) ? `<button class="ar-btn" id="pdAR" type="button"><span class="ar-ic">🏠</span><span><b>شوفها في بيتك</b><small>مجسم 3D تدوّره 360° • وبالكاميرا على أرضيتك بمقاسها الحقيقي</small></span></button>` : ''}
       </div>
       <div class="pd-info">
         <h1>${esc(p.name)}</h1>
@@ -529,6 +530,12 @@ function wireProduct(c, p) {
     if (imgs.length) openGallery(imgs.map(s => ({ src: s, cap: p.name })), idx);
   };
   thumbs.onclick = (e) => { const b = e.target.closest('button'); if (b) { idx = +b.dataset.i; draw(); } };
+  // «شوفها في بيتك»: يفتح على لون الصورة المعروضة حالياً
+  if ($('pdAR')) $('pdAR').onclick = () => {
+    const items = (p.arItems || []).filter(x => x.src), cur = imgs[idx];
+    const k = Math.max(0, items.findIndex(x => x.from === cur || x.src === cur));
+    openRugAR(p, k, sized);
+  };
   // سحب بالإصبع على الجوال
   let x0 = null;
   main.addEventListener('touchstart', e => x0 = e.touches[0].clientX, { passive: true });

@@ -136,7 +136,36 @@
             }
           ],
           "available": true,
-          "featured": true
+          "featured": true,
+          "arItems": [
+            {
+              "src": "uploads/ar-rugf06-5ee30f.jpg",
+              "from": "uploads/rugf06-5ee30f.webp",
+              "name": "كريمي متعدد"
+            },
+            {
+              "src": "uploads/ar-rugf07-4e9e14.jpg",
+              "from": "uploads/rugf07-4e9e14.webp",
+              "name": "كريمي وأزرق"
+            },
+            {
+              "src": "uploads/ar-rugf08-e2bd6d.jpg",
+              "from": "uploads/rugf08-e2bd6d.webp",
+              "name": "كريمي وطوبي"
+            },
+            {
+              "src": "uploads/ar-rugf09-9b379a.jpg",
+              "from": "uploads/rugf09-9b379a.webp",
+              "name": "كريمي هادئ"
+            },
+            {
+              "src": "uploads/ar-rugf05-2bf0a2.jpg",
+              "from": "uploads/rugf05-2bf0a2.webp",
+              "name": "رمادي"
+            }
+          ],
+          "arRound": false,
+          "arSizes": ""
         },
         {
           "id": "4d0a9e21",
@@ -202,7 +231,31 @@
             }
           ],
           "available": true,
-          "featured": true
+          "featured": true,
+          "arItems": [
+            {
+              "src": "uploads/ar-rugf11-356192.jpg",
+              "from": "uploads/rugf11-356192.webp",
+              "name": "بيج"
+            },
+            {
+              "src": "uploads/ar-rugf12-39ccc0.jpg",
+              "from": "uploads/rugf12-39ccc0.webp",
+              "name": "بيج فاتح"
+            },
+            {
+              "src": "uploads/ar-rugf10-45d33d.jpg",
+              "from": "uploads/rugf10-45d33d.webp",
+              "name": "إطار زيتي"
+            },
+            {
+              "src": "uploads/ar-rugf13-516b4f.jpg",
+              "from": "uploads/rugf13-516b4f.webp",
+              "name": "إطار عنابي"
+            }
+          ],
+          "arRound": false,
+          "arSizes": ""
         },
         {
           "id": "11148675",
@@ -458,7 +511,16 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "arItems": [
+            {
+              "src": "uploads/ar-p51-300aff.jpg",
+              "from": "uploads/p51-300aff.webp",
+              "name": "بيج ورمادي"
+            }
+          ],
+          "arRound": true,
+          "arSizes": ""
         },
         {
           "id": "15d13fd7",
@@ -499,7 +561,21 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "arItems": [
+            {
+              "src": "uploads/ar-p14-57261d.jpg",
+              "from": "uploads/p14-57261d.webp",
+              "name": "عنابي"
+            },
+            {
+              "src": "uploads/ar-p15-68c45e.jpg",
+              "from": "uploads/p15-68c45e.webp",
+              "name": "كحلي"
+            }
+          ],
+          "arRound": false,
+          "arSizes": ""
         },
         {
           "id": "eb32b265",
@@ -769,7 +845,26 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "arItems": [
+            {
+              "src": "uploads/ar-rugf02-61b5e4.jpg",
+              "from": "uploads/rugf02-61b5e4.webp",
+              "name": "بيج"
+            },
+            {
+              "src": "uploads/ar-rugf03-2a30c1.jpg",
+              "from": "uploads/rugf03-2a30c1.webp",
+              "name": "رمادي فاتح"
+            },
+            {
+              "src": "uploads/ar-rugf04-0b49dc.jpg",
+              "from": "uploads/rugf04-0b49dc.webp",
+              "name": "بني"
+            }
+          ],
+          "arRound": false,
+          "arSizes": ""
         },
         {
           "id": "fd6621f2",
@@ -798,7 +893,16 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "arItems": [
+            {
+              "src": "uploads/ar-rugf01-73992a.jpg",
+              "from": "uploads/rugf01-73992a.webp",
+              "name": "سجادة داماسك كلاسيك"
+            }
+          ],
+          "arRound": false,
+          "arSizes": ""
         }
       ],
       "branchDept": "السجاد"
