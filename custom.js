@@ -201,7 +201,12 @@ function renderCustomPage(cat) {
     <div class="cz-grid">
       <aside class="cz-preview"><div class="cz-card">
         <div class="cz-prev-head"><b id="czTitle"></b><span id="czDims"></span></div>
-        <div class="cz-svg" id="czSvg"></div>
+        <div class="cz-views" id="czViews"><button type="button" class="on" data-view="3d">مجسم 3D <small>↻ 360°</small></button><button type="button" data-view="2d">المخطط بالمقاسات</button></div>
+        <div class="cz-3d" id="cz3d"></div>
+        <div class="cz-svg" id="czSvg" hidden></div>
+        <p class="cz-3d-hint" id="cz3dHint">اسحب بإصبعك عشان تدوّر القطعة وتشوفها من كل جهة — تتغير مباشرة مع اختياراتك</p>
+        <button type="button" class="cz-ar" id="czAR"><span>📱</span> شوفها في مكانك بالكاميرا</button>
+        <div class="cz-ar-note" id="czARNote"></div>
         <div class="cz-sum" id="czSum"></div>
         <p class="cz-hint">المخطط توضيحي لمساعدة الفرع على فهم التصميم — يتم تأكيد التفاصيل النهائية معك قبل التنفيذ.</p>
       </div></aside>
@@ -259,6 +264,7 @@ function specRows() {
 }
 function drawPreview() {
   $('czSvg').innerHTML = diagram(CS);
+  window.cz3dUpdate?.();
   $('czTitle').textContent = pieceOf().t;
   $('czDims').textContent = `${CS.w} × ${['round', 'square'].includes(CS.shape) ? CS.w : CS.d} × ${CS.h} سم`;
   $('czSum').innerHTML = specRows().slice(2).map(([l, v, hex]) => `<span>${hex ? `<i style="background:${hex}"></i>` : ''}<b>${esc(l)}:</b> ${esc(v)}</span>`).join('');
@@ -267,6 +273,14 @@ function drawForm() { $('czForm').innerHTML = formHTML(); drawPreview(); }
 
 function wireCustom() {
   drawForm();
+  if (window.cz3dMount) cz3dMount($('cz3d'));
+  $('czViews').onclick = (e) => {
+    const b = e.target.closest('[data-view]'); if (!b) return;
+    const is3d = b.dataset.view === '3d';
+    $('czViews').querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b));
+    $('cz3d').hidden = !is3d; $('cz3dHint').hidden = !is3d; $('czSvg').hidden = is3d;
+  };
+  $('czAR').onclick = () => window.cz3dAR?.($('czARNote'));
   const form = $('czForm');
   form.addEventListener('click', async (e) => {
     const cat = e.target.closest('[data-cat]');
@@ -389,8 +403,19 @@ async function buildSheet(no) {
   const url = URL.createObjectURL(new Blob([svgStr], { type: 'image/svg+xml' }));
   try { const im = await loadImg(url); g.strokeStyle = '#e9e1cf'; g.lineWidth = 2; g.strokeRect(59, 329, 1122, 549); g.drawImage(im, 60, 330, 1120, 547); } catch {}
   URL.revokeObjectURL(url);
+  // المجسم ثلاثي الأبعاد
+  let y = 940;
+  const snap = await window.cz3dSnapshot?.();
+  if (snap) {
+    try {
+      const u3 = URL.createObjectURL(snap), im = await loadImg(u3), bw = 720, bh = Math.min(520, bw * im.height / im.width);
+      g.font = F(30); g.fillStyle = '#16140f'; g.fillText('المجسم ثلاثي الأبعاد', W - 60, y - 20);
+      g.fillStyle = '#f6f3ec'; g.fillRect((W - bw) / 2, y, bw, bh); g.drawImage(im, (W - bw) / 2, y, bw, bh); g.strokeStyle = '#e9e1cf'; g.strokeRect((W - bw) / 2, y, bw, bh);
+      URL.revokeObjectURL(u3); y += bh + 90;
+    } catch {}
+  }
   // جدول المواصفات
-  let y = 940; const rows = specRows(), refW = CS.ref ? 380 : 0, tableR = W - 60, tableL = 60 + (refW ? refW + 40 : 0);
+  const rows = specRows(), refW = CS.ref ? 380 : 0, tableR = W - 60, tableL = 60 + (refW ? refW + 40 : 0);
   g.font = F(30); g.fillStyle = '#16140f'; g.fillText('المواصفات', tableR, y - 20);
   rows.forEach(([l, v, hex], i) => {
     const ry = y + i * 50;

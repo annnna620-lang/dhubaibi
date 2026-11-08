@@ -746,3 +746,17 @@ h2{font-size:clamp(30px,4vw,46px);color:var(--ink);letter-spacing:-.3px}
 .arv-note{font-size:14px;color:#6b604a;text-align:center;line-height:1.8}
 .arv-note:empty{display:none}
 .arv-qr{display:block;margin:10px auto 0;width:160px;height:160px;image-rendering:pixelated}
+
+/* التفصيل ثلاثي الأبعاد */
+.cz-views{display:flex;gap:6px;background:#f2ede1;padding:5px;border-radius:99px;margin-bottom:10px}
+.cz-views button{flex:1;border:0;background:transparent;border-radius:99px;padding:9px 10px;font:inherit;font-weight:800;font-size:14px;cursor:pointer;color:#6b604a}
+.cz-views button small{font-weight:600;opacity:.8}
+.cz-views button.on{background:#141414;color:#e8c766;box-shadow:0 6px 14px -8px rgba(0,0,0,.5)}
+.cz-3d{position:relative;height:clamp(300px,46vh,440px);border-radius:16px;overflow:hidden;background:radial-gradient(circle at 50% 35%,#fff,#ece5d6)}
+.cz-3d[hidden],.cz-3d-hint[hidden],.cz-svg[hidden]{display:none}
+.cz-3d model-viewer{width:100%;height:100%;--poster-color:transparent}
+.cz3d-load{position:absolute;inset:0;display:grid;place-items:center;color:#8a7a55;font-weight:700;text-align:center;padding:20px}
+.cz-3d-hint{font-size:12.5px;color:#7b7262;text-align:center;margin:8px 0 0}
+.cz-ar{margin-top:10px;width:100%;border:0;border-radius:99px;padding:13px;font:inherit;font-weight:800;font-size:15px;cursor:pointer;background:var(--gold-grad);color:#1a1400;display:flex;align-items:center;justify-content:center;gap:8px}
+.cz-ar-note{font-size:13.5px;color:#6b604a;text-align:center;line-height:1.8;margin-top:6px}
+.cz-ar-note:empty{display:none}
