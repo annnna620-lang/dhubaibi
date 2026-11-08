@@ -22,7 +22,7 @@ window.GH_BLOBS = {};
     });
     if (!r.ok) {
       const j = await r.json().catch(() => ({}));
-      const e = new Error(r.status === 401 ? 'المفتاح غير صحيح أو انتهت صلاحيته' : r.status === 403 || r.status === 404 ? 'المفتاح ما عنده صلاحية تعديل الموقع' : (j.message || 'خطأ من GitHub ' + r.status));
+      const e = new Error(r.status === 401 ? 'المفتاح غير صحيح أو انتهت صلاحيته' : r.status === 403 || r.status === 404 ? 'المفتاح ما عنده صلاحية الكتابة — في GitHub افتح المفتاح واضغط Edit: اختر مستودع dhubaibi، وخلّ Contents على Read and write' : (j.message || 'خطأ من GitHub ' + r.status));
       e.status = r.status; throw e;
     }
     return r.status === 204 ? null : r.json();
