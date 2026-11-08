@@ -1046,7 +1046,32 @@
             }
           ],
           "available": true,
-          "featured": true
+          "featured": true,
+          "model3d": {
+            "shape": "round",
+            "mat": "solid",
+            "top": "travertine",
+            "topColor": [
+              "ترافرتين",
+              "#d9c7a6"
+            ],
+            "edge": "rounded",
+            "legs": "wood",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#6b4a33"
+            ],
+            "def": {
+              "kind": "nesting",
+              "k": "nesting"
+            },
+            "w": 90,
+            "d": 90,
+            "h": 45
+          }
         },
         {
           "id": "0509dff2",
@@ -1075,7 +1100,33 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "round",
+            "mat": "mdf",
+            "top": "marble",
+            "topColor": [
+              "رخام",
+              "#eeece7"
+            ],
+            "edge": "rounded",
+            "legs": "pedestal",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#dccdb0"
+            ],
+            "def": {
+              "kind": "table",
+              "k": "diningset",
+              "seats": true
+            },
+            "w": 120,
+            "d": 120,
+            "h": 76
+          }
         },
         {
           "id": "ceef776a",
@@ -1099,7 +1150,33 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "sintered",
+            "topColor": [
+              "ذهبي",
+              "#c9a54a"
+            ],
+            "edge": "rounded",
+            "legs": "black",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 6,
+            "color": [
+              "",
+              "#2a2a2a"
+            ],
+            "def": {
+              "kind": "table",
+              "k": "diningset",
+              "seats": true
+            },
+            "w": 180,
+            "d": 90,
+            "h": 76
+          }
         },
         {
           "id": "ac0a17f0",
@@ -1128,7 +1205,32 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "round",
+            "mat": "metal",
+            "top": "glass",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "gold",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#c9c2b0"
+            ],
+            "def": {
+              "kind": "nesting",
+              "k": "nesting"
+            },
+            "w": 90,
+            "d": 90,
+            "h": 45
+          }
         },
         {
           "id": "40ceec1b",
@@ -1164,7 +1266,32 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "round",
+            "mat": "metal",
+            "top": "sintered",
+            "topColor": [
+              "أسود",
+              "#1e1e1e"
+            ],
+            "edge": "rounded",
+            "legs": "black",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#1f1f1f"
+            ],
+            "def": {
+              "kind": "nesting",
+              "k": "nesting"
+            },
+            "w": 90,
+            "d": 90,
+            "h": 45
+          }
         },
         {
           "id": "4d0b5a21",
@@ -1188,7 +1315,32 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "oval",
+            "mat": "metal",
+            "top": "marble",
+            "topColor": [
+              "رخام",
+              "#eeece7"
+            ],
+            "edge": "rounded",
+            "legs": "gold",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#c9a54a"
+            ],
+            "def": {
+              "kind": "table",
+              "k": "side"
+            },
+            "w": 55,
+            "d": 40,
+            "h": 55
+          }
         },
         {
           "id": "8f242871",
@@ -1216,7 +1368,32 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "round",
+            "mat": "solid",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "wood",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#6b4a33"
+            ],
+            "def": {
+              "kind": "tiered",
+              "k": "tiered"
+            },
+            "w": 45,
+            "d": 45,
+            "h": 70
+          }
         },
         {
           "id": "bccb30d7",
@@ -1240,7 +1417,32 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "round",
+            "mat": "metal",
+            "top": "glass",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "gold",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#c9a54a"
+            ],
+            "def": {
+              "kind": "tiered",
+              "k": "tiered"
+            },
+            "w": 45,
+            "d": 45,
+            "h": 70
+          }
         },
         {
           "id": "da62a17c",
@@ -1268,7 +1470,32 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "round",
+            "mat": "solid",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "wood",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#a57c55"
+            ],
+            "def": {
+              "kind": "nesting",
+              "k": "nesting"
+            },
+            "w": 90,
+            "d": 90,
+            "h": 45
+          }
         },
         {
           "id": "dac30b1c",
@@ -1297,7 +1524,32 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "veneer",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "hidden",
+            "door": "open",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#a57c55"
+            ],
+            "def": {
+              "kind": "cabinet",
+              "k": "buffet"
+            },
+            "w": 180,
+            "d": 45,
+            "h": 50
+          }
         },
         {
           "id": "2f1b2c2c",
@@ -1353,7 +1605,33 @@
             }
           ],
           "available": true,
-          "featured": true
+          "featured": true,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "chrome",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#7a4a2c"
+            ],
+            "def": {
+              "kind": "stool",
+              "k": "stool",
+              "wheels": true
+            },
+            "w": 44,
+            "d": 45,
+            "h": 100
+          }
         },
         {
           "id": "9d78282a",
@@ -1404,7 +1682,34 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "chrome",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#7a4a2c"
+            ],
+            "def": {
+              "kind": "stool",
+              "k": "stool",
+              "back": "high",
+              "square": true
+            },
+            "w": 44,
+            "d": 45,
+            "h": 100
+          }
         },
         {
           "id": "586a52ac",
@@ -1440,7 +1745,34 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "chrome",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#7a4a2c"
+            ],
+            "def": {
+              "kind": "stool",
+              "k": "stool",
+              "back": "high",
+              "arms": true
+            },
+            "w": 44,
+            "d": 45,
+            "h": 100
+          }
         },
         {
           "id": "1dfba48d",
@@ -1511,7 +1843,33 @@
             }
           ],
           "available": true,
-          "featured": true
+          "featured": true,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "chrome",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#7a4a2c"
+            ],
+            "def": {
+              "kind": "stool",
+              "k": "stool",
+              "back": "high"
+            },
+            "w": 44,
+            "d": 45,
+            "h": 100
+          }
         },
         {
           "id": "8eb1ed21",
@@ -1572,7 +1930,33 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "chrome",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#7a4a2c"
+            ],
+            "def": {
+              "kind": "stool",
+              "k": "stool",
+              "seatH": 0.78
+            },
+            "w": 44,
+            "d": 45,
+            "h": 100
+          }
         },
         {
           "id": "383363ac",
@@ -1633,7 +2017,33 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "chrome",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#7a4a2c"
+            ],
+            "def": {
+              "kind": "stool",
+              "k": "stool",
+              "back": "high"
+            },
+            "w": 44,
+            "d": 45,
+            "h": 100
+          }
         },
         {
           "id": "5792ba38",
@@ -1678,7 +2088,34 @@
           "sizes": "",
           "specs": [],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "chrome",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#7a4a2c"
+            ],
+            "def": {
+              "kind": "stool",
+              "k": "stool",
+              "back": "high",
+              "wheels": true
+            },
+            "w": 44,
+            "d": 45,
+            "h": 100
+          }
         },
         {
           "id": "a0a33099",
@@ -1723,7 +2160,33 @@
           "sizes": "",
           "specs": [],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "chrome",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#7a4a2c"
+            ],
+            "def": {
+              "kind": "stool",
+              "k": "stool",
+              "back": "low"
+            },
+            "w": 44,
+            "d": 45,
+            "h": 100
+          }
         },
         {
           "id": "cc93a74e",
@@ -1758,7 +2221,33 @@
           "sizes": "",
           "specs": [],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "black",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#7a4a2c"
+            ],
+            "def": {
+              "kind": "stool",
+              "k": "stool",
+              "back": "high"
+            },
+            "w": 44,
+            "d": 45,
+            "h": 100
+          }
         },
         {
           "id": "5d183f06",
@@ -1793,7 +2282,33 @@
           "sizes": "",
           "specs": [],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "chrome",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#7a4a2c"
+            ],
+            "def": {
+              "kind": "stool",
+              "k": "stool",
+              "back": "low"
+            },
+            "w": 44,
+            "d": 45,
+            "h": 100
+          }
         },
         {
           "id": "81b2b68a",
@@ -1824,7 +2339,33 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "chrome",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#7a4a2c"
+            ],
+            "def": {
+              "kind": "stool",
+              "k": "stool",
+              "back": "high"
+            },
+            "w": 44,
+            "d": 45,
+            "h": 100
+          }
         },
         {
           "id": "1c5799db",
@@ -1859,7 +2400,32 @@
           "sizes": "",
           "specs": [],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "chrome",
+            "door": "flat",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#7a4a2c"
+            ],
+            "def": {
+              "kind": "stool",
+              "k": "stool"
+            },
+            "w": 44,
+            "d": 45,
+            "h": 100
+          }
         },
         {
           "id": "984a6a0e",
@@ -1900,7 +2466,32 @@
             }
           ],
           "available": true,
-          "featured": true
+          "featured": true,
+          "model3d": {
+            "shape": "rect",
+            "mat": "veneer",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "black",
+            "door": "flat",
+            "handle": "gold",
+            "seats": 4,
+            "color": [
+              "",
+              "#a57c55"
+            ],
+            "def": {
+              "kind": "cabinet",
+              "k": "buffet"
+            },
+            "w": 200,
+            "d": 43,
+            "h": 40
+          }
         },
         {
           "id": "0d4c993a",
@@ -1941,7 +2532,32 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "veneer",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "black",
+            "door": "flat",
+            "handle": "gold",
+            "seats": 4,
+            "color": [
+              "",
+              "#a57c55"
+            ],
+            "def": {
+              "kind": "cabinet",
+              "k": "buffet"
+            },
+            "w": 180,
+            "d": 43,
+            "h": 40
+          }
         },
         {
           "id": "6a7ceff4",
@@ -1982,7 +2598,32 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "veneer",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "black",
+            "door": "flat",
+            "handle": "gold",
+            "seats": 4,
+            "color": [
+              "",
+              "#a57c55"
+            ],
+            "def": {
+              "kind": "cabinet",
+              "k": "buffet"
+            },
+            "w": 160,
+            "d": 43,
+            "h": 40
+          }
         },
         {
           "id": "a4c3d5fa",
@@ -2033,7 +2674,32 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "veneer",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "black",
+            "door": "grooved",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#a57c55"
+            ],
+            "def": {
+              "kind": "cabinet",
+              "k": "buffet"
+            },
+            "w": 180,
+            "d": 40,
+            "h": 45
+          }
         },
         {
           "id": "82e70841",
@@ -2064,7 +2730,32 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "veneer",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "black",
+            "door": "grooved",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#a57c55"
+            ],
+            "def": {
+              "kind": "cabinet",
+              "k": "buffet"
+            },
+            "w": 200,
+            "d": 40,
+            "h": 45
+          }
         },
         {
           "id": "e679f84d",
@@ -2110,7 +2801,32 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "wood",
+            "door": "grooved",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#a57c55"
+            ],
+            "def": {
+              "kind": "cabinet",
+              "k": "shoe"
+            },
+            "w": 120,
+            "h": 90,
+            "d": 30
+          }
         },
         {
           "id": "f6252803",
@@ -2156,7 +2872,32 @@
             }
           ],
           "available": true,
-          "featured": true
+          "featured": true,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "wood",
+            "door": "pattern",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#a57c55"
+            ],
+            "def": {
+              "kind": "cabinet",
+              "k": "shoe"
+            },
+            "w": 120,
+            "h": 90,
+            "d": 30
+          }
         },
         {
           "id": "6006181e",
@@ -2202,7 +2943,32 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "wood",
+            "door": "pattern",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#a57c55"
+            ],
+            "def": {
+              "kind": "cabinet",
+              "k": "shoe"
+            },
+            "w": 120,
+            "h": 90,
+            "d": 30
+          }
         },
         {
           "id": "a9cf263a",
@@ -2248,7 +3014,32 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "wood",
+            "door": "grooved",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#a57c55"
+            ],
+            "def": {
+              "kind": "cabinet",
+              "k": "shoe"
+            },
+            "w": 120,
+            "h": 90,
+            "d": 30
+          }
         },
         {
           "id": "09d7aba9",
@@ -2294,7 +3085,32 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "wood",
+            "door": "pattern",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#a57c55"
+            ],
+            "def": {
+              "kind": "cabinet",
+              "k": "shoe"
+            },
+            "w": 120,
+            "h": 90,
+            "d": 30
+          }
         },
         {
           "id": "f9f67e69",
@@ -2340,7 +3156,32 @@
             }
           ],
           "available": true,
-          "featured": false
+          "featured": false,
+          "model3d": {
+            "shape": "rect",
+            "mat": "mdf",
+            "top": "same",
+            "topColor": [
+              "",
+              ""
+            ],
+            "edge": "rounded",
+            "legs": "wood",
+            "door": "pattern",
+            "handle": "hidden",
+            "seats": 4,
+            "color": [
+              "",
+              "#a57c55"
+            ],
+            "def": {
+              "kind": "cabinet",
+              "k": "shoe"
+            },
+            "w": 120,
+            "h": 90,
+            "d": 30
+          }
         }
       ],
       "branchDept": "الأثاث"

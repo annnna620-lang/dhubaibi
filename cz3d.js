@@ -118,7 +118,8 @@
 
   // ---------- بناء القطعة ----------
   function build(st) {
-    const p = CC[st.cat].pieces.find(x => x.k === st.piece), kind = p.kind, M = materials(st), b = Builder();
+    // st.def: تعريف قطعة جاهز (لمنتجات المتجر) بدل أقسام التفصيل
+    const p = st.def || CC[st.cat].pieces.find(x => x.k === st.piece), kind = p.kind, M = materials(st), b = Builder();
     const w = (+st.w || 60) / 100, d = (['round', 'square'].includes(st.shape) ? +st.w : +st.d || 40) / 100, h = (+st.h || 50) / 100;
     const hasTopP = ['table', 'tiered', 'nesting', 'cart'].includes(kind) || ['counter', 'dresser', 'nightstand', 'corner', 'buffet'].includes(p.k);
     const legsOK = kind !== 'unit' && st.piece !== 'wardrobe';
@@ -217,6 +218,16 @@
       const mw = Math.min(w * .34, .6), mh = h * .38; b.prism(rectO(mw, .03, mw / 2), low + .12, low + .12 + mh, M.GOLD, 0, -d / 2 + .02); b.prism(rectO(mw - .04, .01, mw / 2 - .02), low + .14, low + .1 + mh, M.MIRROR, 0, -d / 2 + .04);
       for (let i = 0; i < 4; i++) b.cyl(-w / 2 + .1 + i * .08, h * .88, h * .88 + .06, -d / 2 + .04, .01, M.GOLD, 10);
       b.box(0, h * .86, -d / 2 + .015, w * .4, .08, .02, M.B);
+    } else if (kind === 'stool') {
+      // كرسي بار: مقعد مبطّن + ظهر اختياري + عمود وقاعدة دائرية + حلقة للقدم
+      const seatH = p.seatH || .7, sr = Math.max(.17, w / 2 * .9), FAB = { c: st.color[1], tex: 'fabric', rough: .9, metal: 0 };
+      const CHROME = st.legs === 'black' ? { c: '#1c1c1c', rough: .35, metal: .8 } : { c: '#d7d9dc', rough: .15, metal: 1 };
+      b.prism(p.square ? rectO(sr * 2, sr * 2, .05) : ellO(sr * 2, sr * 2), seatH - .02, seatH + .07, FAB);
+      if (p.back) { const bh = p.back === 'low' ? .16 : .34; b.prism(rectO(sr * 1.8, .05, .03), seatH + .06, seatH + .06 + bh, FAB, 0, -sr * .82); if (p.arms) for (const sx of [-1, 1]) b.box(sx * sr * .9, seatH + .14, -sr * .2, .05, .16, sr * 1.2, FAB); }
+      b.cyl(0, .03, seatH - .02, 0, .03, CHROME, 18); b.prism(ellO(.46, .46), 0, .03, CHROME);
+      const fr = .2, fy = seatH * .42; for (let i = 0; i < 16; i++) { const a = i / 16 * Math.PI * 2; b.box(Math.cos(a) * fr, fy, Math.sin(a) * fr, .085, .016, .016, CHROME); }
+      for (let i = 0; i < 4; i++) { const a = i / 4 * Math.PI * 2 + Math.PI / 4; b.box(Math.cos(a) * fr / 2, fy, Math.sin(a) * fr / 2, .012, .012, fr, CHROME); }
+      if (p.wheels) for (let i = 0; i < 5; i++) { const a = i / 5 * Math.PI * 2; b.cyl(Math.cos(a) * .22, 0, .03, Math.sin(a) * .22, .02, { c: '#222', rough: .6, metal: 0 }, 10); }
     }
     return glb(b);
   }
